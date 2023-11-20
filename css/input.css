@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities 
+		  {
+        /* .tw-rounded-none
+        {
+          border-radius: 0px !important;
+        }
+        .tw-rounded
+        {
+          border-radius: 4px !important;
+        }
+        .tw-rounded-sm
+        {
+          border-radius: 16px !important;
+        }
+        .tw-rounded-md
+        {
+          border-radius: 24px !important;
+        }
+        .tw-rounded-lg
+        {
+          border-radius: 32px !important;
+        }
+        .tw-rounded-xl
+        {
+          border-radius: 48px !important;
+        }
+        .tw-rounded-2xl 
+        {
+          border-radius: 64px !important;
+        }
+        .tw-rounded-full
+        {
+          border-radius: 9999px !important;
+        }
+        */
+         
+
+/* 
+           'none': '0',
+           'sm': '16px',
+           DEFAULT: '0.25rem',
+           DEFAULT: '4px',
+           'md': '24px',
+           'lg': '64px',
+           'full': '9999px',
+           'large': '12px', */
+	        .content-auto 
+			    {
+	          content-visibility: auto;
+	        }
+          .hotspot-btn:hover + .hotspot-card
+          {
+            display: block;
+            animation: show 0.2s ease-in-out;
+          }
+          .hotspot-card
+          {
+            display:none;
+          }
+          .hotspot-card:hover
+          {
+            display:block;
+          }
+          @keyframes show {
+            0% {
+              opacity: 0;
+              transform: scale(0.8);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+        
+	      }
+
+@layer base 
+    {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] 
+        {
+            -webkit-appearance: none;
+            margin: 0;
+            -moz-appearance: textfield !important;
+        } 
+    }         
+
+    @layer components 
+    {
+        .col-center-center
+        {
+          @apply tw-flex tw-flex-col tw-justify-center tw-items-center
+        }
+        /* .justify-col */
+        .col-between-center
+        {
+          @apply tw-flex tw-flex-col tw-justify-between tw-items-center
+        }
+        /* .start-col */
+        .col-start-center
+        {
+          @apply tw-flex tw-flex-col tw-justify-start tw-items-center
+        }
+         .col-center-start
+        {
+          @apply tw-flex tw-flex-col tw-justify-center tw-items-start
+        }
+         
+         .col-start-end
+        {
+          @apply tw-flex tw-flex-col tw-justify-start tw-items-end
+        }
+         
+         .col-start-start
+        {
+          @apply tw-flex tw-flex-col tw-justify-start tw-items-start
+        }
+         .col-between-start
+        {
+          @apply tw-flex tw-flex-col tw-justify-between tw-items-start
+        }
+         
+       
+
+
+        /* .center-row */
+        .row-evenly-center
+        {
+          @apply tw-flex tw-flex-row tw-justify-evenly tw-items-center
+        }
+        .row-center-center
+        {
+          @apply tw-flex tw-flex-row tw-justify-center tw-items-center
+        }
+        .row-center-start
+        {
+          @apply tw-flex tw-flex-row tw-justify-center tw-items-start
+        }
+        /* .justify-row */
+        .row-between-center
+        {
+          @apply tw-flex tw-flex-row tw-justify-between tw-items-center
+        }
+        /* .start-row */
+        .row-between-start
+        {
+          @apply tw-flex tw-flex-row tw-justify-between tw-items-start
+        }
+        /* .start-row */
+        .row-start-center
+        {
+          @apply tw-flex tw-flex-row tw-justify-start tw-items-center
+        }
+        .row-start-start
+        {
+          @apply tw-flex tw-flex-row tw-justify-start tw-items-start
+        }
+        .row-end-center
+        {
+          @apply tw-flex tw-flex-row tw-justify-end tw-items-center
+        }
+        .row-evenly-center
+        {
+          @apply tw-flex tw-flex-row tw-justify-evenly tw-items-center
+        }
+        .row-end-start
+        {
+          @apply tw-flex tw-flex-row tw-justify-end tw-items-start
+        }
+
+
+
+        .green_border
+        {
+          /* @apply tw-border-green-500 tw-border-dashed tw-border-2  */
+          @apply tw-outline-dashed tw-outline-lime-400 tw-outline-2
+        }
+        .font_border
+        {
+          @apply tw-border-sky-300 tw-border-solid tw-border
+        }
+        .card-border
+        {
+          @apply tw-border-slate-50 tw-border-solid tw-border
+        }
+        .pink_border
+        {
+          @apply tw-border-pink-500 tw-border-dashed tw-border
+        }
+        .blue_border
+        {
+          @apply tw-border-sky-500 tw-border-dashed tw-border-2
+        }
+        .side_border
+        {
+          @apply tw-border-sky-500 tw-border-solid tw-border-l-2 tw-border-b-0 tw-border-t-0 tw-border-r-0
+        }
+
+
+        .nav_font
+        {
+            @apply tw-font-work_sans tw-font-medium tw-text-slate-600 tw-text-base
+        }
+
+        .smooth_transition
+        {
+            @apply tw-transition tw-duration-150 tw-ease-in-out
+        }
+
+        .bg_red_gradient
+        {
+          background: linear-gradient(180deg, rgba(115, 15, 1, 0.3) 0%, rgba(115, 15, 1, 0) 100%);
+        }
+        
+      
+    }
+
+    @layer base {
+      html {
+        font-family: Work Sans, sans-serif;
+      }
+    }

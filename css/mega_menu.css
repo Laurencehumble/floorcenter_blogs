@@ -1,0 +1,162 @@
+
+.mega_menu_anim {
+  
+  -webkit-animation-name: animateside;
+  -webkit-animation-duration: 0.4s;
+   animation-name: animateside;
+   animation-duration: 0.4s
+}
+@media only screen and (min-width:768px)
+{
+    .mega_menu_anim {
+      
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+}
+
+
+/*//..............................................................................................................
+//.....AAAA......NNNN....NNN..III..MMMMM...MMMMM.......DDDDDDDDD.......OOOOOO....WWW...WWWWW...WWW.NNNN....NNN..
+//.....AAAAA.....NNNN....NNN..III..MMMMM...MMMMM.......DDDDDDDDDD....OOOOOOOOOO..WWW...WWWWW...WWW.NNNN....NNN..
+//.....AAAAA.....NNNNN...NNN..III..MMMMM...MMMMM.......DDDDDDDDDDD..OOOOOOOOOOOO.WWWW..WWWWW..WWWW.NNNNN...NNN..
+//....AAAAAA.....NNNNN...NNN..III..MMMMM...MMMMM.......DDD....DDDD..OOOO....OOOO.WWWW..WWWWW..WWWW.NNNNN...NNN..
+//....AAAAAAA....NNNNNN..NNN..III..MMMMMM.MMMMMM.......DDD.....DDD..OOO......OOO..WWW.WWWWWWW.WWW..NNNNNN..NNN..
+//...AAAA.AAA....NNNNNNN.NNN..III..MMMMMM.MMMMMM.......DDD.....DDDDOOOO......OOOO.WWW.WWW.WWW.WWW..NNNNNNN.NNN..
+//...AAA..AAAA...NNN.NNN.NNN..III..MMMMMM.MMMMMM.......DDD.....DDDDOOOO......OOOO.WWWWWWW.WWW.WWW..NNN.NNN.NNN..
+//...AAAAAAAAA...NNN.NNNNNNN..III..MMMMMMMMMMMMM.......DDD.....DDDDOOOO......OOOO.WWWWWWW.WWWWWWW..NNN.NNNNNNN..
+//..AAAAAAAAAA...NNN..NNNNNN..III..MMM.MMMMM.MMM.......DDD.....DDD..OOO......OOO...WWWWWW..WWWWW...NNN..NNNNNN..
+//..AAAAAAAAAAA..NNN..NNNNNN..III..MMM.MMMMM.MMM.......DDD....DDDD..OOOO....OOOO...WWWWW...WWWWW...NNN..NNNNNN..
+//..AAA.....AAA..NNN...NNNNN..III..MMM.MMMMM.MMM.......DDDDDDDDDDD..OOOOOOOOOOOO...WWWWW...WWWWW...NNN...NNNNN..
+//.AAAA.....AAAA.NNN....NNNN..III..MMM..MMMM.MMM.......DDDDDDDDDD....OOOOOOOOOO....WWWWW...WWWWW...NNN....NNNN..
+//.AAA......AAAA.NNN....NNNN..III..MMM..MMM..MMM.......DDDDDDDDD.......OOOOOO......WWWW.....WWWW...NNN....NNNN..
+//..............................................................................................................
+*/
+
+
+/*@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+*/
+@keyframes animatetop {
+  from {top:-320px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animateclose {
+  from {top:0; opacity:1}
+  to {top:-320px; opacity:0}
+}
+
+@keyframes animateside{
+  from {right:-300px; opacity:0}
+  to {right:0; opacity:1}
+}
+
+.close_anim
+{
+  -webkit-animation-name: animateclose;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animateclose;
+   animation-duration: 0.4s
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.panel {
+  animation: fadein .4s;
+}
+.nav_button {
+  animation: fadein 0.8s;
+  box-shadow: none;
+  animation-duration: 0.5s
+}
+.nav_button-product {
+  animation-duration: 0.5s,
+}
+
+
+
+
+
+
+
+/* .panel_img1
+{
+  background-image: url('../src/category/shape_mobile.svg');
+  background-repeat: no-repeat;
+  background-attachment: contain;
+  background-size: 100%;
+  background-position: center;
+  height: 160vw;
+  width: 100%;
+  margin: 0; 
+  overflow: scroll;
+} */
+
+
+
+
+
+/*//.......................................................................................................................
+//.TTTTTTTTTTT..AAAA.....AABBBBBBBB...........OOOOOOO....OORRRRRRRR...RRDDDDDDD....DDEEEEEEEEE.EERRRRRRRR.....SSSSSSS....
+//.TTTTTTTTTTT..AAAA.....AABBBBBBBBB.........OOOOOOOOO...OORRRRRRRRR..RRDDDDDDDDD..DDEEEEEEEEE.EERRRRRRRRR...RSSSSSSSS...
+//.TTTTTTTTTTT.AAAAAA....AABBBBBBBBBB....... OOOOOOOOOO..OORRRRRRRRRR.RRDDDDDDDDD..DDEEEEEEEEE.EERRRRRRRRRR..RSSSSSSSS...
+//.....TTT.....AAAAAA....AABB....BBBB....... OOO...OOOOO.OORR....RRRR.RRDD....DDDD.DDEE........EERR....RRRR.RRSS...SSSS..
+//.....TTT....AAAAAAA....AABB....BBBB...... OO.....OOOO.OORR....RRRR.RRDD.....DDD.DDEE........EERR....RRRR.RRSS.........
+//.....TTT....AAA.AAAA...AABBBBBBBBB....... O.......OOO.OORRRRRRRRRR.RRDD.....DDD.DDEEEEEEEE..EERRRRRRRRRR..RSSSSSS.....
+//.....TTT....AAA..AAA...AABBBBBBBBB....... O.......OOO.OORRRRRRRRR..RRDD.....DDD.DDEEEEEEEE..EERRRRRRRRR....SSSSSSSS...
+//.....TTT...TAAAAAAAAA..AABBBBBBBBBB...... O.......OOO.OORRRRRRR....RRDD.....DDD.DDEEEEEEEE..EERRRRRRR........SSSSSSS..
+//.....TTT...TAAAAAAAAA..AABB.....BBB...... OO.....OOOO.OORR..RRRR...RRDD.....DDD.DDEE........EERR..RRRR..........SSSS..
+//.....TTT...TAAAAAAAAA..AABB.....BBB....... OOO...OOOOO.OORR...RRRR..RRDD....DDDD.DDEE........EERR...RRRR..RRSS....SSS..
+//.....TTT..TTAA....AAAA.AABBBBBBBBBB....... OOOOOOOOOO..OORR...RRRR..RRDDDDDDDDD..DDEEEEEEEEE.EERR...RRRR..RRSSSSSSSSS..
+//.....TTT..TTA......AAA.AABBBBBBBBBB........OOOOOOOOO...OORR....RRRR.RRDDDDDDDDD..DDEEEEEEEEE.EERR....RRRR..RSSSSSSSS...
+//.....TTT.TTTA......AAAAAABBBBBBBB...........OOOOOOO....OORR.....RRRRRRDDDDDDD....DDEEEEEEEEE.EERR.....RRRR..SSSSSSS....
+//.......................................................................................................................
+*/
+
+
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel, 
+#four:checked ~ .panels #four-panel, 
+#five:checked ~ .panels #five-panel, 
+#six:checked ~ .panels #six-panel
+{
+  display: flex;
+  /* color: #BF1901 !important; */
+}
+
+#one:checked ~ .tab_nav #one-tab,
+#two:checked ~ .tab_nav #two-tab,
+#three:checked ~ .tab_nav #three-tab,
+#four:checked ~ .tab_nav #four-tab,
+#five:checked ~ .tab_nav #five-tab,
+#six:checked ~ .tab_nav #six-tab
+{
+  /* color: #000;
+  /* text-decoration: underline; */
+  /* text-decoration: underline; */
+  /* color: #BF1901 !important; */
+}
+

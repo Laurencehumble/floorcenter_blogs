@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floor Center</title>
+     
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+
+    <!-- <link rel="stylesheet" href="css/build.css"> -->
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/output2.css">
+    <link rel="stylesheet" href="css/mega_menu.css">
+
+</head>
+<body>
+    <img src="assets/thumbnail.jpg" alt="" class="tw-block tw-w-full tw-h-0">
+
+    <!-- 
+    .########..########..########....###....##....##.########...#######..####.##....##.########..######.....########..########..########....###....##....##.########...#######..####.##....##.########..######....
+    .##.....##.##.....##.##.........##.##...##...##..##.....##.##.....##..##..###...##....##....##....##....##.....##.##.....##.##.........##.##...##...##..##.....##.##.....##..##..###...##....##....##....##...
+    .##.....##.##.....##.##........##...##..##..##...##.....##.##.....##..##..####..##....##....##..........##.....##.##.....##.##........##...##..##..##...##.....##.##.....##..##..####..##....##....##.........
+    .########..########..######...##.....##.#####....########..##.....##..##..##.##.##....##.....######.....########..########..######...##.....##.#####....########..##.....##..##..##.##.##....##.....######....
+    .##.....##.##...##...##.......#########.##..##...##........##.....##..##..##..####....##..........##....##.....##.##...##...##.......#########.##..##...##........##.....##..##..##..####....##..........##...
+    .##.....##.##....##..##.......##.....##.##...##..##........##.....##..##..##...###....##....##....##....##.....##.##....##..##.......##.....##.##...##..##........##.....##..##..##...###....##....##....##...
+    .########..##.....##.########.##.....##.##....##.##.........#######..####.##....##....##.....######.....########..##.....##.########.##.....##.##....##.##.........#######..####.##....##....##.....######.... 
+    -->
+    <div class="tw-fixed tw-bottom-0 tw-z-50 tw-w-full tw-h-6 tw-text-xl tw-font-light tw-text-gray-500 row-center-center green_border1 tw-bg-slate-200 tw-font-outfit">
+        <h1 class="tw-block big_mobile:tw-hidden tablet:tw-hidden">
+        mobile - 375px - dev mode - nadz
+        </h1>
+
+        <h1 class="tw-hidden big_mobile:tw-block tablet:tw-hidden">
+        big-mobile - 376px to 767px - dev mode - nadz
+        </h1>
+
+        <h1 class="tw-hidden big_mobile:tw-hidden tablet:tw-block square:tw-hidden">
+        tablet - 769px to 1023px - dev mode - nadz
+        </h1>
+
+        <h1 class="tw-hidden big_mobile:tw-hidden tablet:tw-hidden square:tw-block laptop:tw-hidden desktop:tw-hidden">
+        square - 1024px - 1279px - dev mode - nadz
+        </h1>
+
+        <h1 class="tw-hidden big_mobile:tw-hidden tablet:tw-hidden square:tw-hidden laptop:tw-block desktop:tw-hidden">
+        laptop - 1280px - 1355px - dev mode - nadz
+        </h1>
+
+        <h1 class="tw-hidden big_mobile:tw-hidden tablet:tw-hidden square:tw-hidden laptop:tw-hidden desktop:tw-block">
+        desktop - 1356px up - dev mode - nadz
+        </h1>
+    </div>
+
+
+    <!-- 
+    .##....##....###....##.....##.####..######......###....########.####..#######..##....##....##....##....###....##.....##.####..######......###....########.####..#######..##....##...
+    .###...##...##.##...##.....##..##..##....##....##.##......##.....##..##.....##.###...##....###...##...##.##...##.....##..##..##....##....##.##......##.....##..##.....##.###...##...
+    .####..##..##...##..##.....##..##..##.........##...##.....##.....##..##.....##.####..##....####..##..##...##..##.....##..##..##.........##...##.....##.....##..##.....##.####..##...
+    .##.##.##.##.....##.##.....##..##..##...####.##.....##....##.....##..##.....##.##.##.##....##.##.##.##.....##.##.....##..##..##...####.##.....##....##.....##..##.....##.##.##.##...
+    .##..####.#########..##...##...##..##....##..#########....##.....##..##.....##.##..####....##..####.#########..##...##...##..##....##..#########....##.....##..##.....##.##..####...
+    .##...###.##.....##...##.##....##..##....##..##.....##....##.....##..##.....##.##...###....##...###.##.....##...##.##....##..##....##..##.....##....##.....##..##.....##.##...###...
+    .##....##.##.....##....###....####..######...##.....##....##....####..#######..##....##....##....##.##.....##....###....####..######...##.....##....##....####..#######..##....##...
+    -->
+    <header class="">
+        <div class="tw-fixed tw-top-0 tw-z-50 tw-w-full tw-h-16 tw-bg-white tw-shadow-xl row-center-center tw-backdrop-blur-md">
+            <nav class="tw-w-full tw-h-16 row-between-center tablet:tw-px-4 laptop:tw-w-laptop_1280px desktop:tw-w-laptop_1280px pink_border1">
+            
+                <!-- 
+                .##.......########.########.########.....######..####.########..########....##....##....###....##.....##
+                .##.......##.......##..........##.......##....##..##..##.....##.##..........###...##...##.##...##.....##
+                .##.......##.......##..........##.......##........##..##.....##.##..........####..##..##...##..##.....##
+                .##.......######...######......##........######...##..##.....##.######......##.##.##.##.....##.##.....##
+                .##.......##.......##..........##.............##..##..##.....##.##..........##..####.#########..##...##.
+                .##.......##.......##..........##.......##....##..##..##.....##.##..........##...###.##.....##...##.##..
+                .########.########.##..........##........######..####.########..########....##....##.##.....##....###...
+                -->
+                <div class="tw-h-16 row-start-center tw-w-fit green_border1">
+
+                    <!-- 
+                    .########..########.########......######..########.########..####.########.
+                    .##.....##.##.......##.....##....##....##....##....##.....##..##..##.....##
+                    .##.....##.##.......##.....##....##..........##....##.....##..##..##.....##
+                    .########..######...##.....##.....######.....##....########...##..########.
+                    .##...##...##.......##.....##..........##....##....##...##....##..##.......
+                    .##....##..##.......##.....##....##....##....##....##....##...##..##.......
+                    .##.....##.########.########......######.....##....##.....##.####.##.......
+                    -->
+                    <button onclick="window.location.href='index.html';" class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-16 tw-h-16 tw-transition-all tw-bg-fc-700 tablet:tw-w-40 hover:tablet:tw-h-20 ">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.71698" y="26.6077" width="30.2532" height="30.2532" transform="rotate(-45 2.71698 26.6077)" fill="black"/>
+                        <rect x="2.064" y="21.8771" width="30.72" height="30.72" transform="rotate(-45 2.064 21.8771)" fill="black"/>
+                        <rect x="2.39999" y="21.8771" width="30.2532" height="30.2532" transform="rotate(-45 2.39999 21.8771)" fill="white"/>
+                        <path d="M21.5216 17.1368L21.5211 17.1375C21.272 17.5464 20.9679 17.8331 20.61 18.0026C20.2501 18.1731 19.781 18.2605 19.1988 18.2605H18.8883V12.9404H20.0523C21.1124 12.9404 21.83 12.9897 22.2127 13.0854L22.2128 13.0854C22.9154 13.2594 23.4436 13.5574 23.8041 13.9749L23.8045 13.9754C24.1698 14.391 24.4025 15.0377 24.4933 15.9266L24.4999 15.9914H24.5651H24.9673H25.0394V15.9193V12.103V12.0309H24.9673H13.7442H13.6721V12.103V12.466V12.5381H13.7442H14.1857C14.5512 12.5381 14.8308 12.6024 15.0312 12.7239L15.0312 12.7239L15.0334 12.7252C15.247 12.8446 15.38 12.9812 15.4437 13.1318C15.4748 13.2053 15.5012 13.3439 15.5192 13.5562C15.5369 13.7659 15.5459 14.04 15.5459 14.3791V23.1299C15.5459 23.4625 15.5369 23.7299 15.5192 23.933C15.5012 24.1391 15.4748 24.27 15.4445 24.336L15.4445 24.336L15.4434 24.3386C15.3566 24.5494 15.2355 24.6916 15.0835 24.7734L15.0834 24.7734L15.0813 24.7746C14.8606 24.9034 14.5638 24.9708 14.1857 24.9708H13.7442H13.6721V25.0429V25.4059V25.478H13.7442H20.6998H20.7719V25.4059V25.0429V24.9708H20.6998H20.2583C19.8932 24.9708 19.6095 24.9099 19.4018 24.7942C19.1952 24.6688 19.0608 24.5286 18.9901 24.3761C18.9592 24.3024 18.9329 24.1641 18.915 23.9528C18.8973 23.7431 18.8883 23.469 18.8883 23.1299V19.1307H19.1988C19.8836 19.1307 20.4931 19.3288 21.0297 19.7249L21.0305 19.7254C21.5598 20.1053 21.8973 20.9079 22.0211 22.1658L22.0275 22.2308H22.0928H22.4362H22.5083V22.1587V15.4778V15.4057H22.4362H22.0928H22.0282L22.0212 15.4699C21.9434 16.1766 21.7754 16.7306 21.5216 17.1368ZM34.4674 19.4905V19.4184H34.3953H34.0127H33.9498L33.9413 19.4807C33.8966 19.8063 33.799 20.0339 33.6576 20.1753C33.5205 20.3125 33.3588 20.3798 33.169 20.3798C33.0993 20.3798 32.9722 20.3537 32.7806 20.2947C32.5918 20.2366 32.3475 20.149 32.0475 20.0316L32.0474 20.0316C31.0007 19.6234 30.0042 19.4184 29.0585 19.4184C27.7772 19.4184 26.565 19.7356 25.4231 20.3693L25.4229 20.3694C24.2865 21.0036 23.3812 21.8958 22.7078 23.0447L22.7077 23.0449C22.0409 24.1935 21.7071 25.4093 21.7071 26.6913C21.7071 27.9072 22.0079 29.0541 22.6089 30.1307L22.6091 30.131C23.2178 31.2094 24.0784 32.0368 25.1895 32.6122L25.1896 32.6123C26.3065 33.1872 27.5803 33.4738 29.0094 33.4738C30.0962 33.4738 31.0481 33.2992 31.8633 32.9479L31.8636 32.9478C32.685 32.5901 33.471 32.0181 34.2218 31.2344L34.2418 31.2135V31.1845V30.0367V29.8425L34.115 29.9896C33.3466 30.8818 32.6177 31.5057 31.9289 31.8662L31.9287 31.8663C31.2465 32.2267 30.4929 32.4074 29.6667 32.4074C28.6583 32.4074 27.8445 32.1619 27.2192 31.677C26.5925 31.1845 26.1287 30.4594 25.8311 29.4956C25.5327 28.5224 25.383 27.444 25.383 26.2597C25.383 25.058 25.5876 23.9689 25.9955 22.9912L25.9956 22.9911C26.3107 22.2322 26.8086 21.6186 27.4905 21.149C28.1719 20.6797 28.9196 20.4456 29.7354 20.4456C30.7125 20.4456 31.586 20.7601 32.3582 21.3907C33.1283 22.0196 33.6577 22.9266 33.9426 24.1182L33.9558 24.1735H34.0127H34.3953H34.4674V24.1014V19.4905Z" fill="#BF1901" stroke="black" stroke-width="0.144218"/>
+                    </svg>
+                    </button>
+                    <!-- 
+                    .##.......########.########.########....########..##.....##.########.########..#######..##....##..######.
+                    .##.......##.......##..........##.......##.....##.##.....##....##.......##....##.....##.###...##.##....##
+                    .##.......##.......##..........##.......##.....##.##.....##....##.......##....##.....##.####..##.##......
+                    .##.......######...######......##.......########..##.....##....##.......##....##.....##.##.##.##..######.
+                    .##.......##.......##..........##.......##.....##.##.....##....##.......##....##.....##.##..####.......##
+                    .##.......##.......##..........##.......##.....##.##.....##....##.......##....##.....##.##...###.##....##
+                    .########.########.##..........##.......########...#######.....##.......##.....#######..##....##..######.
+                    -->
+                    <div class="tw-ml-3 row-center-center tw-w-fit tw-gap-x-1 green_border1">
+                    <button id="mega_menu_products_btn" class="tw-flex tw-h-10 tw-gap-1 tw-rounded-full laptop:tw-px-4 tw-w-fit laptop:tw-bg-slate-50 row-between-center square:hover:tw-bg-slate-100">
+                        <div class="tw-w-8 tw-h-10 row-center-center ">
+                            <svg class="" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66666 6.66667H12V14.6667H6.66666V6.66667ZM20 17.3333H25.3333V25.3333H20V17.3333ZM6.66666 22.6667H12V25.3333H6.66666V22.6667ZM20 6.66667H25.3333V9.33333H20V6.66667Z" fill="#CBD5E1"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 17.3333H14.6667V4H4V17.3333ZM6.66667 6.66667H12V14.6667H6.66667V6.66667ZM17.3333 28H28V14.6667H17.3333V28ZM20 17.3333H25.3333V25.3333H20V17.3333ZM17.3333 4V12H28V4H17.3333ZM25.3333 9.33333H20V6.66667H25.3333V9.33333ZM4 28H14.6667V20H4V28ZM6.66667 22.6667H12V25.3333H6.66667V22.6667Z" fill="#64748B"/>
+                            </svg>          
+                        </div>
+                        <span class="tw-antialiased tw-font-medium tw-font-outfit tw-text-slate-600 ">Products</span>
+                    </button>
+                    </div>
+
+                    <div class="tw-ml-3 row-center-center tw-w-fit tw-gap-x-1 green_border1">
+                        <button id="mega_menu_idea_blog_btn" class="tw-h-10 tw-px-3 tw-antialiased tw-font-medium tw-truncate tw-rounded-full tw-font-outfit hover:tw-ease-in-out hover:tw-transition tw-w-fit tw-bg-slate-200/0 tw-text-slate-700 hover:tw-bg-slate-100">
+                            <span class="tw-antialiased tw-font-medium tw-font-outfit tw-text-slate-600 ">Ideas and Blogs</span>
+                        </button>
+                        </div>
+
+                    <div class="tw-hidden tw-ml-1 row-center-center tw-w-fit tw-gap-x-1 square:tw-flex">
+                        <!-- <button class="tw-h-10 tw-px-3 tw-text-base tw-font-medium tw-rounded-full hover:tw-ease-in-out hover:tw-transition-opacity tw-w-fit tw-bg-slate-200/0 tw-text-slate-700 hover:tw-bg-slate-200 hover:tw-shadow-m">Products</button> -->
+                        <!-- <button id="mega_menu_idea_blog_btn" class="tw-h-10 tw-px-3 tw-antialiased tw-font-medium tw-truncate tw-rounded-full green_border1 tw-font-outfit hover:tw-ease-in-out hover:tw-transition tw-w-fit tw-bg-slate-200/0 tw-text-slate-700 hover:tw-bg-slate-100">Ideas and Blog</button> -->
+                        <button id="other_btn2" class="tw-h-10 tw-px-3 tw-antialiased tw-font-medium tw-truncate tw-rounded-full tw-font-outfit hover:tw-ease-in-out hover:tw-transition tw-w-fit tw-bg-slate-200/0 tw-text-slate-700 hover:tw-bg-slate-100 ">Branches</button>
+                        <button id="other_btn4" class="tw-h-10 tw-px-3 tw-antialiased tw-font-medium tw-truncate tw-rounded-full tw-font-outfit hover:tw-ease-in-out hover:tw-transition tw-w-fit tw-bg-slate-200/0 tw-text-slate-700 hover:tw-bg-slate-100 ">About Us</button>
+                    
+                    </div>
+
+                </div>
+
+                <!--  
+                .########..####..######...##.....##.########....##....##....###....##.....##
+                .##.....##..##..##....##..##.....##....##.......###...##...##.##...##.....##
+                .##.....##..##..##........##.....##....##.......####..##..##...##..##.....##
+                .########...##..##...####.#########....##.......##.##.##.##.....##.##.....##
+                .##...##....##..##....##..##.....##....##.......##..####.#########..##...##.
+                .##....##...##..##....##..##.....##....##.......##...###.##.....##...##.##..
+                .##.....##.####..######...##.....##....##.......##....##.##.....##....###...
+                -->
+                
+                
+
+                    <!-- 
+                    ..######..########....###....########...######..##.....##....########.....###....########.
+                    .##....##.##.........##.##...##.....##.##....##.##.....##....##.....##...##.##...##.....##
+                    .##.......##........##...##..##.....##.##.......##.....##....##.....##..##...##..##.....##
+                    ..######..######...##.....##.########..##.......#########....########..##.....##.########.
+                    .......##.##.......#########.##...##...##.......##.....##....##.....##.#########.##...##..
+                    .##....##.##.......##.....##.##....##..##....##.##.....##....##.....##.##.....##.##....##.
+                    ..######..########.##.....##.##.....##..######..##.....##....########..##.....##.##.....##
+                    -->
+                    <!-- <div class="tw-hidden tw-w-60 tablet:row-center-center big_mobile:tw-w-full square:tw-max-w-[240px] tw-min-w-[160px]"> -->
+                    <div class="tw-flex-grow tw-h-16 tw-gap-2 tw-transition-all tw-duration-500 row-end-center green_border1">
+                    <div class="tw-flex-grow tw-hidden tw-gap-0 tw-transition-all tablet:row-center-center tw-font-outfit">
+                    <input type="search" placeholder="Search..." name="" id="" class="tw-w-full tw-h-10 tw-ml-6 tw-font-normal tw-border-1 tw-border-slate-100/0 tw-bg-slate-100 tw-text-md tw-text-slate-600 tw-rounded-s-full tw-placeholder:tw-text-slate-200 tw-placeholder:tw-font-light"></input>
+                    <button class="tw-w-20 tw-h-10 tw-bg-slate-100 tw-border-1 tw-border-slate-200 tw-rounded-e-full row-center-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#64748B"/>
+                        </svg>
+                    </button>
+                    </div>
+
+                    <!-- 
+                    .########..####..######...##.....##.########....########..##.....##.########.########..#######..##....##..######.
+                    .##.....##..##..##....##..##.....##....##.......##.....##.##.....##....##.......##....##.....##.###...##.##....##
+                    .##.....##..##..##........##.....##....##.......##.....##.##.....##....##.......##....##.....##.####..##.##......
+                    .########...##..##...####.#########....##.......########..##.....##....##.......##....##.....##.##.##.##..######.
+                    .##...##....##..##....##..##.....##....##.......##.....##.##.....##....##.......##....##.....##.##..####.......##
+                    .##....##...##..##....##..##.....##....##.......##.....##.##.....##....##.......##....##.....##.##...###.##....##
+                    .##.....##.####..######...##.....##....##.......########...#######.....##.......##.....#######..##....##..######.
+                    -->
+                    <div class="tw-flex-shrink tw-w-auto tw-px-2 row-center-center green_border1">
+                    
+                    
+                        <button class="tw-w-10 tw-h-10 tw-rounded-full tablet:tw-w-fit laptop:tw-gap-2 laptop:tw-pr-2 laptop:tw-pl-4 laptop:tw-bg-slate-50 laptop:hover:tw-bg-slate-100 row-center-center">
+                            <span class="tw-hidden tw-w-12 tw-font-medium square:tw-w-fit tw-whitespace-nowrap tw-font-outfit tw-text-slate-600 laptop:tw-block">Romel</span> 
+                            <img class="tw-hidden tw-w-8 tw-h-8 laptop:tw-block" src="assets/profile3.svg" alt="" >
+                            <img class="tw-block tw-w-8 tw-h-8 laptop:tw-hidden" src="assets/profile4.svg" alt="" >
+                        </button>
+
+                        <button class="tw-w-10 tw-h-16 row-center-center green_border1">
+                            <!-- CART SVG START -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.597 23.8C9.11255 23.8 7.9115 24.97 7.9115 26.4C7.9115 27.83 9.11255 29 10.597 29C12.0815 29 13.296 27.83 13.296 26.4C13.296 24.97 12.0815 23.8 10.597 23.8ZM24.092 23.8C22.6075 23.8 21.4065 24.97 21.4065 26.4C21.4065 27.83 22.6075 29 24.092 29C25.5764 29 26.791 27.83 26.791 26.4C26.791 24.97 25.5764 23.8 24.092 23.8ZM22.1352 17.3C23.1473 17.3 24.038 16.767 24.4968 15.961L29.328 7.524C29.8274 6.666 29.1796 5.6 28.154 5.6H8.18139L6.91286 3H2.5V5.6H5.199L10.0572 15.467L8.23537 18.639C7.25024 20.381 8.54575 22.5 10.597 22.5H26.791V19.9H10.597L12.0814 17.3H22.1352ZM9.46341 8.2H25.8598L22.1352 14.7H12.6617L9.46341 8.2Z" fill="#64748B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.316 15H22.1383L26 8H9L12.316 15Z" fill="#CBD5E1"/>
+                            </svg>
+                            <!-- CART SVG END -->
+
+                        </button>                
+                        
+                        <button class="tw-w-10 tw-h-16 square:tw-hidden row-center-center green_border1" id="mega_menu_products_btn_mobile">
+                            <!-- MENU SVG START -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="26" height="3" transform="translate(3 6)" fill="#64748B"/>
+                            <rect width="26" height="3" transform="translate(3 14.5)" fill="#94A3B8"/>
+                            <rect width="26" height="3" transform="translate(3 23)" fill="#64748B"/>
+                            </svg>
+                            
+                            <!-- MENU SVG END -->
+                        </button>
+   
+                        <!-- PROFILE -->
+                        <!-- <button class="tw-w-12 tw-h-16 row-center-center green_border1">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 13.15C14.2603 13.15 12.85 11.7397 12.85 9.99999C12.85 8.2603 14.2603 6.84999 16 6.84999C17.7397 6.84999 19.15 8.2603 19.15 9.99999C19.15 11.7397 17.7397 13.15 16 13.15ZM16 20.35C20.455 20.35 25.15 22.54 25.15 23.5V25.15H6.85001V23.5C6.85001 22.54 11.545 20.35 16 20.35Z" fill="#CBD5E1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 17.5C11.995 17.5 4 19.51 4 23.5V28H28V23.5C28 19.51 20.005 17.5 16 17.5ZM25.15 25.15H6.85V23.5C6.85 22.54 11.545 20.35 16 20.35C20.455 20.35 25.15 22.54 25.15 23.5V25.15ZM16 16C19.315 16 22 13.315 22 9.99999C22 6.68498 19.315 3.99998 16 3.99998C12.685 3.99998 10 6.68498 10 9.99999C10 13.315 12.685 16 16 16ZM16 6.84998C17.74 6.84998 19.15 8.25998 19.15 9.99998C19.15 11.74 17.74 13.15 16 13.15C14.26 13.15 12.85 11.74 12.85 9.99998C12.85 8.25998 14.26 6.84998 16 6.84998Z" fill="#64748B"/>
+                            </svg>
+                        </button> -->
+                    
+
+
+                    
+                    
+                    </div>
+                    
+                </div>
+            </nav>
+            
+        </div>
+
+           <!--
+        .##.....##.########..######......###.......##.....##.########.##....##.##.....##......................................................
+        .###...###.##.......##....##....##.##......###...###.##.......###...##.##.....##......................................................
+        .####.####.##.......##.........##...##.....####.####.##.......####..##.##.....##......................................................
+        .##.###.##.######...##...####.##.....##....##.###.##.######...##.##.##.##.....##......................................................
+        .##.....##.##.......##....##..#########....##.....##.##.......##..####.##.....##......................................................
+        .##.....##.##.......##....##..##.....##....##.....##.##.......##...###.##.....##......................................................
+        .##.....##.########..######...##.....##....##.....##.########.##....##..#######.......................................................
+         -->
+        <div id="mega_menu_products_modal" class="tw-fixed tw-z-40 tw-justify-end tw-hidden tw-w-full tw-h-full tw-transition-all tablet:tw-justify-center tw-backdrop-blur-sm tw-bg-slate-800/50 tw-font-outfit">
+
+                <!-- 
+                .##......##.##.....##.####.########.########....##.....##..#######..########.....###....##...............................................................
+                .##..##..##.##.....##..##.....##....##..........###...###.##.....##.##.....##...##.##...##...............................................................
+                .##..##..##.##.....##..##.....##....##..........####.####.##.....##.##.....##..##...##..##...............................................................
+                .##..##..##.#########..##.....##....######......##.###.##.##.....##.##.....##.##.....##.##...............................................................
+                .##..##..##.##.....##..##.....##....##..........##.....##.##.....##.##.....##.#########.##...............................................................
+                .##..##..##.##.....##..##.....##....##..........##.....##.##.....##.##.....##.##.....##.##...............................................................
+                ..###..###..##.....##.####....##....########....##.....##..#######..########..##.....##.########.........................................................
+                 -->
+                <div id="product" class="mega_menu_anim tw-relative tw-h-full laptop:tw-rounded-xl tw-mt-16 tw-overflow-y-scroll tw-overflow-x-clip tw-bg-white tw-w-72 blue_border1 tablet:tw-py-6 laptop:tw-p-0 laptop:tw-mt-20 tablet:tw-w-full tablet:tw-h-fit laptop:tw-h-[440px] laptop:tw-w-laptop_1280px col-start-center tablet:row-center-center laptop:tw-overflow-y-clip ">
+
+                    <div class="tw-w-full tw-h-16 tw-mt-4 tw-mb-1 row-center-center tablet:tw-hidden green_border1">
+                        <input type="search" placeholder="Search..." name="" id="" class="tw-w-48 tw-h-10 tw-font-normal tw-border-1 tw-border-slate-200/0 tw-bg-slate-200 tw-text-md tw-text-slate-600 tw-placeholder:tw-text-slate-200 tw-placeholder:tw-font-light"></input>
+                        <button class="tw-w-16 tw-h-10 tw-bg-slate-200 tw-border-1 row-center-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#64748B"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                <!-- CATEGORY AND PANEL -->
+                    <div class="tw-gap-1 tw-mx-8 tw-h-fit col-center-center tablet:row-between-start laptop:row-between-center tw-w-72 tablet:tw-h-fit laptop:tw-h-96 tablet:tw-w-laptop_1280px blue_bor1der">
+                    <!-- radio buttons tw-hidden -->
+                    <input class="tw-hidden radio" id="one" name="group" type="radio" checked>
+                    <input class="tw-hidden radio" id="two" name="group" type="radio">
+                    <input class="tw-hidden radio" id="three" name="group" type="radio">
+                    <input class="tw-hidden radio" id="four" name="group" type="radio">
+                    <input class="tw-hidden radio" id="five" name="group" type="radio">
+                    <input class="tw-hidden radio" id="six" name="group" type="radio">
+                    
+                    <!-- CATEGEORY -->
+                    <div class="tw-gap-1 tw-text-xl tw-font-normal tw-leading-none tw-transition tw-duration-300 tw-ease-in-out tw-h-fit tablet:tw-h-96 tw-w-72 tablet:tw-w-72 pink_bord1er col-center-center tw-text-slate-600">
+                        <h1 class="tw-w-64 tw-px-4 tw-text-2xl tw-font-bold tw-leading-tight col-center-start flex-shrink tablet:tw-flex-grow drop-shadow-md tw-bg-slate-100 tablet:tw-bg-slate-50/50"> Browse by<br>Categories</h1>
+                        <label class="tw-flex-shrink tw-w-64 tw-px-4 tw-py-2 tw-ease-in-out tw-cursor-pointer hover:tw-underline col-center-start tw-bg-slate-50 tablet:tw-bg-slate-50/50 laptop:tw-w-full hover:tw-font-semibold hover:tw-text-fc-600" id="one-tab" for="one">Shape and Sizes</label>
+                        <label class="tw-flex-shrink tw-w-64 tw-px-4 tw-py-2 tw-ease-in-out tw-cursor-pointer hover:tw-underline col-center-start tw-bg-slate-50 tablet:tw-bg-slate-50/50 laptop:tw-w-full hover:tw-font-semibold hover:tw-text-fc-600" id="two-tab" for="two">Looks and Colors</label>
+                        <label class="tw-flex-shrink tw-w-64 tw-px-4 tw-py-2 tw-ease-in-out tw-cursor-pointer hover:tw-underline col-center-start tw-bg-slate-50 tablet:tw-bg-slate-50/50 laptop:tw-w-full hover:tw-font-semibold hover:tw-text-fc-600" id="three-tab" for="three">Mosaics, Vinyls and<br>Borders</label>
+                        <label class="tw-flex-shrink tw-w-64 tw-px-4 tw-py-2 tw-ease-in-out tw-cursor-pointer hover:tw-underline col-center-start tw-bg-slate-50 tablet:tw-bg-slate-50/50 laptop:tw-w-full hover:tw-font-semibold hover:tw-text-fc-600" id="four-tab" for="four">Sanitary Wares</label>
+                        <label class="tw-flex-shrink tw-w-64 tw-px-4 tw-py-2 tw-ease-in-out tw-cursor-pointer hover:tw-underline col-center-start tw-bg-slate-50 tablet:tw-bg-slate-50/50 laptop:tw-w-full hover:tw-font-semibold hover:tw-text-fc-600" id="five-tab" for="five">Trims, Grouts and<br>Adhesives</label>
+                    </div>
+                    <div class="tw-w-full panels tw-h-fit row-center-center blue_border1">
+                        
+                            <!-- 
+                            ..######..##.....##....###....########..########.......###....##....##.########......######..####.########.########..######.
+                            .##....##.##.....##...##.##...##.....##.##............##.##...###...##.##.....##....##....##..##.......##..##.......##....##
+                            .##.......##.....##..##...##..##.....##.##...........##...##..####..##.##.....##....##........##......##...##.......##......
+                            ..######..#########.##.....##.########..######......##.....##.##.##.##.##.....##.....######...##.....##....######....######.
+                            .......##.##.....##.#########.##........##..........#########.##..####.##.....##..........##..##....##.....##.............##
+                            .##....##.##.....##.##.....##.##........##..........##.....##.##...###.##.....##....##....##..##...##......##.......##....##
+                            ..######..##.....##.##.....##.##........########....##.....##.##....##.########......######..####.########.########..######.
+                            -->
+                            <div id="one-panel" 
+                            class="tw-flex-col tw-items-center tw-hidden tw-w-64 tw-h-fit tablet:tw-h-96 laptop:tw-h-96 tablet:tw-w-full blue_border1 tablet:tw-bg-slate-50/50 tablet:tw-justify-start laptop:tw-justify-center panel ">
+                                <!-- PANEL TEXT -->
+                                <div class="tw-w-full tw-h-12 tw-px-4 tw-mx-6 tw-border-b-2 tw-border-solid pink_borde1r row-between-center">
+                                    <h4 class="tw-text-2xl tw-font-semibold tw-text-slate-700">Shape And Sizes </h4>
+                                    <button id="close1" class="tw-hidden tw-h-8 tw-cursor-pointer tw-w-tw-h-8 row-center-center hover:tw-scale-110 tablet:tw-block">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 8.54667L23.4533 6.66667L16 14.12L8.54667 6.66667L6.66667 8.54667L14.12 16L6.66667 23.4533L8.54667 25.3333L16 17.88L23.4533 25.3333L25.3333 23.4533L17.88 16L25.3333 8.54667Z" fill="#475569"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <!-- PANELS -->
+                                <div class="tw-w-64 tw-gap-4 tw-overflow-y-scroll laptop:tw-overflow-y-clip tw-h-fit tablet:tw-h-96 laptop:tw-h-full tablet:tw-w-full blue_bord1er col-start-center tablet:row-center-start tablet:tw-flex-wrap laptop:row-center-start tablet:tw-px-4">
+                                    <!-- square -->
+                                    <div class="tw-gap-2 tw-shrink laptop:tw-flex-grow tablet:tw-h-80 pink_border1 col-start-start">
+                                        <!-- IMAGE -->
+                                        <div class="tw-w-full tw-h-24 tw-gap-4 tw-border-b-2 tw-border-solid row-start-center tw-border-slate-200">
+                                            <img src="/assets/src/img/square.jpg" alt="" class="tw-w-auto tw-h-16 tw-shadow-lg ">
+                                            <h4 class="tw-text-xl tw-font-medium tw-leading-tight tw-text-slate-600"> Square</h4>
+                                        </div>
+                                        <!-- LIST -->
+                                        <div class="tw-gap-6 row-between-start">
+                                            <!-- column -->
+                                            <ul class="tw-flex-grow tw-h-full tw-gap-1 col-start-start">
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Small Format</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">10x10 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x20 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x30 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">40x40 cm</li></a> 
+
+                                            </ul>
+                                            <!-- column -->
+                                            <ul class="tw-flex-grow tw-h-full tw-gap-1 col-start-start">
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Large Format</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">60x60 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">80x80 cm</li></a> 
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- rect -->
+                                    <div class="tw-gap-2 tw-shrink laptop:tw-flex-grow tablet:tw-h-80 pink_border1 col-start-start">
+                                        <!-- IMAGE -->
+                                        <div class="tw-w-full tw-h-24 tw-gap-4 tw-border-b-2 tw-border-solid row-start-center">
+                                            <img src="/assets/src/img/rectangle1.png" alt="" class="tw-w-auto tw-h-16 tw-shadow-lg">
+                                            <h4 class="tw-text-xl tw-font-medium tw-leading-none tw-text-slate-600">Rectangle<br>& Subway</h4>
+                                        </div>
+                                        <!-- LIST -->
+                                        <div class="tw-gap-6 row-center-start">
+                                            <div class="tw-flex-grow tw-gap-2 col-start-start">
+                                        
+                                                <a href="" class=""><lh class="tw-mb-2 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Small Format</lh></a> 
+                                                <div class="tw-w-full tw-gap-2 col-start-start tablet:row-between-start">
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">7.5x15 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">7.5x30 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">11.0x24 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x60 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x30 cm</li></a> 
+
+                                                    </ul>
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x60 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x80 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x90 cm</li></a> 
+                                                    </ul>
+                                                    <!-- column -->
+                                                </div>
+                                            </div>
+                                            <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Large Format</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">60x60 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">80x80 cm</li></a> 
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Big Slabs</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">90x180 cm</li></a> 
+
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                
+                                    <!-- planks -->
+                                    <div class="tw-w-full tw-gap-2 tw-shrink laptop:tw-flex-grow tablet:tw-w-fit tablet:tw-h-80 tw-bg-slate-200/0 pink_border1 col-start-start">
+                                        <!-- IMAGE -->
+                                        <div class="tw-w-full tw-h-24 tw-gap-4 tw-border-b-2 row-start-center tw-border-slate-200 ">
+                                            <img src="/assets/src/img/planks1.png" alt="" class="tw-w-auto tw-h-16 tw-shadow-lg">
+                                            <h4 class="tw-text-xl tw-font-medium tw-leading-tight tw-text-slate-600">Planks</h4>
+                                        </div>
+                                        <!-- LIST -->
+                                        <div class="tw-gap-6 tw-bg-slate-400/0 row-start-start">
+                                            <div class="tw-flex-grow tw-gap-2 tw-bg-slate-400/0 col-start-start ">
+                                        
+                                                <a href="" class=""><lh class="tw-mb-2 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">All Plank Sizes</lh></a> 
+                                                <div class="tw-w-full tw-gap-6 tw-bg-slate-400/0 row-start-start ">
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-1 tw-bg-slate-500/0 col-start-start">
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">15x60 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">15x80 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">15x90 cm</li></a> 
+
+                                                    </ul>
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-1 tw-bg-slate-500/0 col-start-start">
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x100 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x120 cm</li></a> 
+                                                    </ul>
+                                                    <!-- column -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            
+                            </div>
+
+                            <!-- 
+                            .##........#######...#######..##....##..######........###....##....##.########......######...#######..##........#######..########...######.
+                            .##.......##.....##.##.....##.##...##..##....##......##.##...###...##.##.....##....##....##.##.....##.##.......##.....##.##.....##.##....##
+                            .##.......##.....##.##.....##.##..##...##...........##...##..####..##.##.....##....##.......##.....##.##.......##.....##.##.....##.##......
+                            .##.......##.....##.##.....##.#####.....######.....##.....##.##.##.##.##.....##....##.......##.....##.##.......##.....##.########...######.
+                            .##.......##.....##.##.....##.##..##.........##....#########.##..####.##.....##....##.......##.....##.##.......##.....##.##...##.........##
+                            .##.......##.....##.##.....##.##...##..##....##....##.....##.##...###.##.....##....##....##.##.....##.##.......##.....##.##....##..##....##
+                            .########..#######...#######..##....##..######.....##.....##.##....##.########......######...#######..########..#######..##.....##..######.
+                            -->
+                            <div id="two-panel" 
+                            class="tw-flex-col tw-items-center tw-hidden tw-w-64 tw-h-fit tablet:tw-h-96 laptop:tw-h-96 tablet:tw-w-full blue_border1 tablet:tw-bg-slate-50/50 tablet:tw-justify-start laptop:tw-justify-center panel ">
+                                <!-- PANEL TEXT -->
+                                <div class="tw-w-full tw-px-4 tw-mx-6 tw-border-b-2 tw-border-solid tablet:tw-h-12 pink_borde1r row-between-center tw-border-slate-100">
+                                    <h4 class="tw-my-2 tw-text-2xl tw-font-semibold tw-leading-none tw-text-slate-700">Tile Looks and Colors </h4>
+                                    <span id="close2" class="tw-hidden tw-h-8 tw-cursor-pointer tw-w-tw-h-8 row-center-center hover:tw-scale-110 tablet:tw-block">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 8.54667L23.4533 6.66667L16 14.12L8.54667 6.66667L6.66667 8.54667L14.12 16L6.66667 23.4533L8.54667 25.3333L16 17.88L23.4533 25.3333L25.3333 23.4533L17.88 16L25.3333 8.54667Z" fill="#475569"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                
+                                <!-- PANELS -->
+                                <div class="tw-w-64 tw-gap-2 tw-overflow-y-scroll laptop:tw-overflow-y-clip tw-h-fit tablet:tw-h-96 laptop:tw-h-full tablet:tw-w-full blue_border1 col-start-start tablet:col-start-center laptop:row-center-start">
+                                    <!-- LOOKS -->
+                                    <!-- LOOKS TEXT COLUMN ALIGN LEFT AND TOP-->
+                                    <div class="tw-w-full tw-gap-2 tw-px-4 tw-py-2 laptop:tw-flex-shrink col-start-start blue_borde1r">
+                                        <div class="tw-w-full tw-h-8 tw-border-b-2 blue_border1 tw-border-slate-100 ">
+                                            <h3 class="tw-text-xl tw-font-medium tw-text-slate-600">Looks</h3>
+                                        </div>
+                                        <!-- TWO COLUMNS -->
+                                        <div class="tw-w-full tw-h-full tw-gap-2 pink_border1 tablet:tw-gap-8 col-start-start tablet:row-start-center">
+                                            <!-- COL LEFT -->
+                                            <div class="tw-gap-2 col-start-start">
+                                                <div class="tw-gap-4 tw-w-44 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/marble-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Marble</li>
+                                                </div>
+                                                <div class="tw-gap-4 tw-w-44 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/stone-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadowmd">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Stone</li>
+                                                </div>
+                                                <div class="tw-gap-4 tw-w-44 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/concrete-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Concrete</li>
+                                                </div>
+                                                <div class="tw-gap-4 tw-w-44 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/wood-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Wood</li>
+                                                </div>
+                                                <div class="tw-gap-4 tw-w-44 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/marble-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Marble</li>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- COL RIGHT -->
+                                            <div class="tw-gap-2 col-start-start">
+                                                <div class="tw-w-48 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/terrazzo-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Terrazzo</li>
+                                                </div>
+                                                <div class="tw-w-48 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/3d-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">3D-look</li>
+                                                </div>
+                                                <div class="tw-w-48 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/pattern-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Patterned</li>
+                                                </div>
+                                                <div class="tw-w-48 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/mosaic-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Mosaic</li>
+                                                </div>
+                                                <div class="tw-w-48 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/concrete-look.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg tw-shadow-md">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Wood</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- COLORS -->
+                                    <div class="tw-w-full tw-gap-2 tw-px-4 tw-py-2 laptop:tw-flex-shrink col-start-start blue_border1">
+                                        <div class="tw-w-full tw-h-8 tw-border-b-2 blue_border1 tw-border-slate-100 ">
+                                            <h3 class="tw-text-xl tw-font-medium tw-text-slate-600">Colors</h3>
+                                        </div>
+                                        <!-- THREE COLUMN -->
+                                        <div class="tw-w-full tw-gap-4 tw-h-fit pink_border1 tablet:tw-py-4 col-start-start tablet:row-start-center">
+                                            <!-- COL LEFT -->
+                                            <div class="tw-gap-4 col-start-start">
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/white.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">White</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/black.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Black</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/gray.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Gray</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/brown.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Brown</li>
+                                                </div>
+                                            
+                                            </div>
+                                            <!-- COL CENTER -->
+                                            <div class="tw-gap-4 col-start-start">
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/cream.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Cream</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/red.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Red</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/blue.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Blue</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/green.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Green</li>
+                                                </div>
+                                            
+                                            </div>
+                                            <!-- COL RIGHT -->
+                                            <div class="tw-gap-4 col-start-start">
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/yellow.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Yellow</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/orange.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Orange</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/pink.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Pink</li>
+                                                </div>
+                                                <div class="tw-w-32 tw-gap-4 tw-h-fit row-start-center">
+                                                    <img src="/assets/src/img/beige.png" alt="" class="tw-w-auto tw-h-12 tw-rounded-lg">
+                                                    <li class="tw-font-medium tw-list-none tw-text-slate-600">Beige</li>
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                
+                                </div>
+                            
+                            </div>
+
+                            <!-- 
+                            .##.....##.####.##....##.##....##.##........######.........................................................................
+                            .##.....##..##..###...##..##..##..##.......##....##........................................................................
+                            .##.....##..##..####..##...####...##.......##..............................................................................
+                            .##.....##..##..##.##.##....##....##........######.........................................................................
+                            ..##...##...##..##..####....##....##.............##........................................................................
+                            ...##.##....##..##...###....##....##.......##....##........................................................................
+                            ....###....####.##....##....##....########..######.........................................................................
+                            -->
+                            <div id="three-panel" 
+                            class="tw-flex-col tw-items-center tw-hidden tw-w-64 tw-h-fit tablet:tw-h-96 laptop:tw-h-96 tablet:tw-w-full blue_border1 tablet:tw-bg-slate-50/50 tablet:tw-justify-start laptop:tw-justify-center panel ">
+                                <!-- PANEL TEXT -->
+                                <div class="tw-w-full tw-px-4 tw-mx-6 tw-border-b-2 tw-border-solid tw-h-fit tablet:tw-h-12 pink_borde1r row-between-center tw-border-slate-100">
+                                    <h4 class="tw-my-2 tw-text-2xl tw-font-semibold tw-leading-none tw-text-slate-700">Mosaics, Vinyls and Borders </h4>
+                                    <span id="close3" class="tw-hidden tw-h-8 tw-cursor-pointer tw-w-tw-h-8 row-center-center hover:tw-scale-110 tablet:tw-block">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 8.54667L23.4533 6.66667L16 14.12L8.54667 6.66667L6.66667 8.54667L14.12 16L6.66667 23.4533L8.54667 25.3333L16 17.88L23.4533 25.3333L25.3333 23.4533L17.88 16L25.3333 8.54667Z" fill="#475569"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                
+                                <!-- PANELS -->
+                                <div class="tw-w-64 tw-h-full tw-gap-4 tw-overflow-y-scroll laptop:tw-overflow-y-clip tablet:tw-h-96 laptop:tw-h-full tablet:tw-w-full blue_bord1er col-start-center tablet:row-center-center tablet:tw-flex-wrap laptop:row-center-start tablet:tw-px-4">
+                                    
+                                    <!-- VINYLS -->
+                                    <div class="tw-w-full tw-gap-2 laptop:tw-flex-grow tw-shrink tablet:tw-w-fit tablet:tw-h-80 col-start-start">
+                                        <!-- IMAGE -->
+                                        <div class="tw-w-full tw-h-24 tw-gap-4 tw-border-b-2 tw-border-solid row-start-center tw-border-slate-100">
+                                            <img src="/assets/src/img/vinyl1.png" alt="" class="tw-w-auto tw-h-16 tw-shadow-lg">
+                                            <h4 class="tw-text-xl tw-font-medium tw-leading-none tw-text-slate-600">Vinyls</h4>
+                                        </div>
+                                        <!-- LIST -->
+                                        <div class="tw-gap-6 row-center-start">
+                                            <div class="tw-flex-grow tw-gap-2 col-start-start">
+                                        
+                                                <a href="" class=""><lh class="tw-mb-2 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Planks</lh></a> 
+                                                <div class="tw-w-full tw-gap-2 col-start-start tablet:row-between-start">
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">15x90 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">18x120 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">18x122 cm</li></a> 
+                                                    <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x120 cm</li></a> 
+                                                    </ul>
+                                                
+                                                </div>
+                                            </div>
+                                            <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Subway</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x60 cm</li></a> 
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Square</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x30 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">45x45 cm</li></a> 
+
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+
+                                    <!-- BORDERS -->
+                                    <div class="tw-w-full tw-gap-2 laptop:tw-flex-grow tw-shrink tablet:tw-w-fit tablet:tw-h-80 col-start-start">
+                                        <!-- IMAGE -->
+                                        <div class="tw-w-full tw-h-24 tw-gap-4 tw-border-b-2 row-start-center tw-border-slate-100 ">
+                                            <img src="/assets/src/img/border2.png" alt="" class="tw-w-auto tw-h-16 tw-shadow-lg">
+                                            <h4 class="tw-text-xl tw-font-medium tw-leading-tight tw-text-slate-600">Tile Borders</h4>
+                                        </div>
+                                        <!-- LIST -->
+                                        <div class="tw-gap-6 row-start-start">
+                                            <div class="tw-flex-grow tw-gap-2 col-start-start ">
+                                        
+                                                <a href="" class=""><lh class="tw-mb-2 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">All Border Sizes</lh></a> 
+                                                <div class="tw-w-full tw-gap-4 row-start-start ">
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">5x20 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">5x30 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">5x60 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">8x30 cm</li></a> 
+
+                                                    </ul>
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">6x20 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">6x30 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">6x60 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">9x30 cm</li></a> 
+                                                    </ul>
+                                                    <!-- column -->
+                                                    <ul class="tw-flex-grow tw-h-full tw-gap-2 col-start-start">
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">7x20 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">7x30 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">7x60 cm</li></a> 
+                                                        <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">10x30 cm</li></a> 
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mosiac -->
+                                    <div class="tw-gap-2 tw-shrink laptop:tw-flex-grow tablet:tw-h-80 tw-bg-slate-200/0 pink_border1 col-start-start">
+                                        <!-- IMAGE -->
+                                        <div class="tw-w-full tw-h-24 tw-gap-4 tw-border-b-2 tw-border-solid row-start-center tw-border-slate-200">
+                                            <img src="/assets/src/img/mosaic.png" alt="" class="tw-h-16 tw-shadow-lg">
+                                            <h4 class="tw-text-xl tw-font-medium tw-leading-none tw-text-slate-600"> Mosaic <br> & Accents</h4>
+                                        </div>
+                                        <!-- LIST -->
+                                        <div class="tw-gap-6 tw-bg-slate-400/0 row-between-start">
+                                            <!-- column -->
+                                            <ul class="tw-flex-grow tw-h-full tw-gap-2 tw-bg-slate-500/0 col-start-start">
+                                            <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Mosaics</lh></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">10x10 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">20x20 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">30x30 cm</li></a> 
+                                            
+                                            </ul>
+                                            <!-- column -->
+                                            <ul class="tw-flex-grow tw-h-full tw-gap-2 tw-bg-slate-500/00 col-start-start">
+                                                <a href="" class=""><lh class="tw-mb-8 tw-text-lg tw-font-medium tw-leading-none tw-text-slate-600">Accents</lh></a> 
+                                                <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">40x40 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">60x60 cm</li></a> 
+                                            <a href="" class=""><li class="tw-text-lg tw-text-slate-500 hover:tw-underline hover:tw-text-slate-800">80x80 cm</li></a> 
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    
+                                
+                                    
+                                    
+                                </div>
+                            
+                            </div>
+
+                            <!-- 
+                            ..######.....###....##....##.####.########....###....########..##....##.....................................................................
+                            .##....##...##.##...###...##..##.....##......##.##...##.....##..##..##......................................................................
+                            .##........##...##..####..##..##.....##.....##...##..##.....##...####.......................................................................
+                            ..######..##.....##.##.##.##..##.....##....##.....##.########.....##........................................................................
+                            .......##.#########.##..####..##.....##....#########.##...##......##........................................................................
+                            .##....##.##.....##.##...###..##.....##....##.....##.##....##.....##........................................................................
+                            ..######..##.....##.##....##.####....##....##.....##.##.....##....##........................................................................
+                            -->
+                            <div id="four-panel" 
+                            class="tw-flex-col tw-items-center tw-hidden tw-w-64 tw-h-fit tablet:tw-h-96 laptop:tw-h-96 tablet:tw-w-full blue_bord1er tablet:tw-bg-slate-50/50 tablet:tw-justify-start laptop:tw-justify-center panel ">
+                            <!-- PANEL TEXT -->
+                            <div class="tw-w-full tw-px-4 tw-mx-6 tw-border-b-2 tw-border-solid tw-h-fit tablet:tw-h-12 pink_borde1r row-between-center tw-border-slate-200">
+                                <h4 class="tw-my-2 tw-text-2xl tw-font-semibold tw-leading-none tw-text-slate-700">Sanitary Wares</h4>
+                                <span id="close4" class="tw-hidden tw-h-8 tw-cursor-pointer tw-w-tw-h-8 row-center-center hover:tw-scale-110 tablet:tw-block">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 8.54667L23.4533 6.66667L16 14.12L8.54667 6.66667L6.66667 8.54667L14.12 16L6.66667 23.4533L8.54667 25.3333L16 17.88L23.4533 25.3333L25.3333 23.4533L17.88 16L25.3333 8.54667Z" fill="#475569"/>
+                                    </svg>
+                                </span>
+                            </div>
+                                
+                                <!-- PANELS -->
+                                <div class="tw-w-64 tw-gap-4 tw-overflow-y-scroll laptop:tw-overflow-y-clip tw-h-fit tablet:tw-h-96 laptop:tw-h-full tablet:tw-w-full blue_bord1er col-start-center tablet:row-center-start tablet:tw-flex-wrap laptop:row-center-start tablet:tw-p-2">
+                                    <div class="tw-w-full tw-h-full tw-gap-1 tw-p-2 tw-text-2xl tw-font-medium tw-leading-none tw-text-white tw-font-outfit blue_bor1der col-start-center square:row-center-center">
+                                        <div class="tw-w-full tw-h-full tw-gap-1 row-start-start">
+                                            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                                <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Basin</p>
+                                                <div class="tw-w-full tw-h-48 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                                style="background: url('assets/img/sanitary/basin2.png') center/cover no-repeat;">
+                                                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                                <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Toilets</p>
+                                                <div class="tw-w-full tw-h-48 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                                style="background: url('assets/img/sanitary/toilet2.png') center/cover no-repeat;">
+                                                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="tw-w-full tw-h-full tw-gap-1 row-start-start">
+                                            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                                <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Faucets</p>
+                                                <div class="tw-w-full tw-h-48 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                                style="background: url('assets/img/sanitary/faucet2.png') center/cover no-repeat;">
+                                                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                                <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Showers</p>
+                                                <div class="tw-w-full tw-h-48 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                                style="background: url('assets/img/sanitary/shower2.png') center/cover no-repeat;">
+                                                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="tw-w-full tw-h-full tw-gap-1 row-start-start">
+                                            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                                <p class="tw-absolute tw-z-10 tw-p-4 pink_border1 tw-drop-shadow-xl">Soap and Tissue <br>Holder</p>
+                                                <div class="tw-w-full tw-h-48 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                                style="background: url('assets/img/sanitary/holder2.png') center/cover no-repeat;">
+                                                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                                <p class="tw-absolute tw-z-10 tw-p-4 pink_border1 tw-drop-shadow-xl">Floor and Basin Drains</p>
+                                                <div class="tw-w-full tw-h-48 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                                style="background: url('assets/img/sanitary/drain2.png') center/cover no-repeat;">
+                                                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                            
+                            </div>
+
+                        <!-- 
+                            ....###....########..##.....##.########..######..####.##.....##.########.....................................................................
+                            ...##.##...##.....##.##.....##.##.......##....##..##..##.....##.##...........................................................................
+                            ..##...##..##.....##.##.....##.##.......##........##..##.....##.##...........................................................................
+                            .##.....##.##.....##.#########.######....######...##..##.....##.######.......................................................................
+                            .#########.##.....##.##.....##.##.............##..##...##...##..##...........................................................................
+                            .##.....##.##.....##.##.....##.##.......##....##..##....##.##...##...........................................................................
+                            .##.....##.########..##.....##.########..######..####....###....########.....................................................................
+                            -->
+                            <div id="five-panel" 
+                            class="tw-flex-col tw-items-center tw-hidden tw-w-64 tw-h-fit tablet:tw-h-96 laptop:tw-h-96 tablet:tw-w-full blue_border1 tablet:tw-bg-slate-50/50 tablet:tw-justify-start laptop:tw-justify-center panel ">
+                            <!-- PANEL TEXT -->
+                                <div class="tw-w-full tw-px-4 tw-mx-6 tw-border-b-2 tw-border-solid tw-h-fit tablet:tw-h-12 pink_borde1r row-between-center tw-border-slate-200">
+                                <h4 class="tw-my-2 tw-text-2xl tw-font-semibold tw-leading-none tw-text-slate-700">Trims, Grout and Adhesives </h4>
+                                <span id="close5" class="tw-hidden tw-h-8 tw-cursor-pointer tw-w-tw-h-8 row-center-center hover:tw-scale-110 tablet:tw-block">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 8.54667L23.4533 6.66667L16 14.12L8.54667 6.66667L6.66667 8.54667L14.12 16L6.66667 23.4533L8.54667 25.3333L16 17.88L23.4533 25.3333L25.3333 23.4533L17.88 16L25.3333 8.54667Z" fill="#475569"/>
+                                    </svg>
+                                </span>
+                                </div>
+                            <!-- PANELS -->
+                            <div class="tw-w-64 tw-gap-4 tw-overflow-y-scroll laptop:tw-overflow-y-clip tw-h-fit tablet:tw-h-96 laptop:tw-h-full tablet:tw-w-full blue_bord1er col-start-center tablet:row-center-start tablet:tw-flex-wrap laptop:row-center-start tablet:tw-p-2">
+                                <div class="tw-w-full tw-h-full tw-gap-1 tw-p-2 tw-text-2xl tw-font-medium tw-text-white tw-font-outfit blue_bor1der col-start-center square:row-center-center ">
+                                    
+                                        <button class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                            <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Grout</p>
+                                            <div class="tw-w-full tw-h-32 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                            style="background: url('assets/img/grout/grout2.png') center/cover no-repeat;">
+                                                <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                </div>
+                                            
+                                            </div>
+                                        </button>
+                                        <button class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                            <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Adhesives</p>
+                                            <div class="tw-w-full tw-h-32 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                            style="background: url('assets/img/grout/adhesive2.png') center/cover no-repeat;">
+                                                <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                </div>
+                                            
+                                            </div>
+                                        </button>
+                                    
+                                
+                                        <button class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                            <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Tile Trims</p>
+                                            <div class="tw-w-full tw-h-32 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                            style="background: url('assets/img/grout/trim2.png') center/cover no-repeat;">
+                                                <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                </div>
+                                            
+                                            </div>
+                                        </button>
+                                        
+                                        <button class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
+                                            <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Tile Cutters</p>
+                                            <div class="tw-w-full tw-h-32 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
+                                            style="background: url('assets/img/grout/cutter2.png') center/cover no-repeat;">
+                                                <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
+                                                </div>
+                                            
+                                            </div>
+                                        </button>
+                                        
+                                    
+                                </div>
+                            
+                                
+                            </div>
+                        
+                            </div>
+
+
+                    </div>
+
+                <div class="tw-w-full tw-h-28 tablet:tw-hidden blue_border1">
+                </div>
+                   
+                </div>
+                    
+                </div>
+            <!-- MEGA MENU DESKTOP CONTENT END -->
+
+        </div>
+
+         <!--
+        .##.....##.########..######......###.......##.....##.########.##....##.##.....##......................................................
+        .###...###.##.......##....##....##.##......###...###.##.......###...##.##.....##......................................................
+        .####.####.##.......##.........##...##.....####.####.##.......####..##.##.....##......................................................
+        .##.###.##.######...##...####.##.....##....##.###.##.######...##.##.##.##.....##......................................................
+        .##.....##.##.......##....##..#########....##.....##.##.......##..####.##.....##......................................................
+        .##.....##.##.......##....##..##.....##....##.....##.##.......##...###.##.....##......................................................
+        .##.....##.########..######...##.....##....##.....##.########.##....##..#######.......................................................
+         -->
+         <div id="mega_menu_idea_blog_modal" class="tw-fixed tw-z-40 tw-justify-end tw-hidden tw-w-full tw-h-full tw-transition-all tablet:tw-justify-center tw-backdrop-blur-sm tw-bg-slate-800/50 tw-font-outfit">
+
+            <!-- 
+            .##......##.##.....##.####.########.########....##.....##..#######..########.....###....##...............................................................
+            .##..##..##.##.....##..##.....##....##..........###...###.##.....##.##.....##...##.##...##...............................................................
+            .##..##..##.##.....##..##.....##....##..........####.####.##.....##.##.....##..##...##..##...............................................................
+            .##..##..##.#########..##.....##....######......##.###.##.##.....##.##.....##.##.....##.##...............................................................
+            .##..##..##.##.....##..##.....##....##..........##.....##.##.....##.##.....##.#########.##...............................................................
+            .##..##..##.##.....##..##.....##....##..........##.....##.##.....##.##.....##.##.....##.##...............................................................
+            ..###..###..##.....##.####....##....########....##.....##..#######..########..##.....##.########.........................................................
+             -->
+            <div id="idea_blog" class="mega_menu_anim tw-gap-4  tw-b-4 tw-items-center tw-relative tw-h-full laptop:tw-rounded-xl  tw-overflow-y-scroll tw-overflow-x-clip tw-bg-white tw-w-72 blue_border1 tablet:tw-py-6 laptop:tw-p-0 laptop:tw-mt-20 tablet:tw-w-full tablet:tw-h-fit laptop:tw-h-[440px] laptop:tw-w-laptop_1280px col-start-center tablet:row-center-center laptop:tw-overflow-y-clip w-flex tw-flex-row" >
+                    <div class="tw-relative">
+                        <img class="tw-rounded-lg tw-w-72 tw-h-96" src="assets/logo/10429_rectangle.png" alt="">
+                    <div class="tw-absolute tw-top-0 tw-right-0 tw-p-4">
+                        <p class=" tw-text-right tw-text-white tw-text-2xl tw-font-normal tw-font-['Outfit'] tw-leading-normal ">   
+                            INSPIRATIONS
+                        </p>
+                    
+                        <div class="tw-py-2 tw-px-2 tw-border-t-2 tw-border-white tw-justify-start tw-items-start tw-gap-2.5 tw-inline-flex">
+                            <p class="tw-text-right tw-text-white tw-text-lg tw-font-light tw-font-['Outfit'] tw-leading-tight">
+                            Discover Endless<br/>Possibilities
+                            </p>
+                        </div>
+                    </div>
+                        <!-- button discover more -->
+                        <div class="tw-absolute tw-bottom-0 tw-right-0 tw-px-4 tw-py-1 tw-m-3 tw-bg-white tw-rounded-full" style="margin-top: 16px;margin-right: 16px;margin-left: 16px;margin-bottom: 16px;">
+                            <button class="tw-text-start tw-text-gray-700 tw-text-base tw-font-medium tw-font-['Outfit'] tw-leading-tight tw-row-center-center" onclick="window.location.href='blogs.html';">discover more</button>
+                        </div>
+                </div>
+
+                     <div class="tw-w-72 tw-h-96">
+                        <div class="tw-pb-2 tw-w-80">
+                            <p class="tw-text-start tw-text-slate-600 tw-text-4xl tw-font-medium tw-font-['Outfit'] tw-leading-10 tw-w-80">Blogs Ideas and Inspirations</p>
+                        </div>
+                       
+                        <div class="">
+                            <p class="tw-text-start tw-text-slate-600 tw-text-xl tw-font-light tw-font-['Outfit'] tw-leading-normal  tw-w-72">
+                                 From stunning tile patterns and
+                                 color combinations to innovative
+                                 tile applications and installation
+                                 techniques, we cover it all. <br/>
+                                <br>Get inspired, unleash your
+                                 creativity, and create beautiful
+                                 spaces with our tile ideas and
+                                 expert insights.</p>
+                        </div>
+                        </div>
+
+
+                        
+                    <!-- start of relative2 -->
+             <div class="tw-relative tw-flex">
+                <!-- img2 -->
+                 <img class="tw-rounded-lg tw-w-52 tw-h-96 " src="assets/logo/10443_rectangle.svg" alt="">
+                    <!-- POOL -->
+                    <div class="tw-absolute tw-top-0 tw-right-0 tw-p-4">
+                        <h1 class="tw-text-white tw-text-lg tw-font-normal tw-font-['Outfit'] tw-leading-normal">
+                           POOL
+                        </h1>
+                    </div>
+                        <!-- button shop now -->
+                        <div class="tw-w-[99px] tw-px-4 tw-py-1 tw-bg-white tw-rounded-full tw-absolute tw-bottom-0 tw-right-0 tw-m-3" style="margin-top: 16px;margin-right: 16px;margin-left: 16px;margin-bottom: 16px;">
+                            <button class="tw-text-center tw-text-gray-700 tw-text-base tw-font-medium tw-leading-tight tw-font-['Outfit']  tw-row-center-center">shop now</button>
+                        </div>
+                        <!-- end of relative2 -->
+        </div>
+          <!-- 3 img's -->
+          <div class="tw-flex tw-flex-col">
+            <div class="tw-flex tw-items-center tw-gap-3 justify-center"> 
+                <!-- start of relative -->
+                 <div class="tw-relative">
+                    <!-- img -->
+                     <img class="tw-w-48 tw-h-32 tw-rounded-lg" src="assets/logo/10452_rectangle.png" alt="" style="padding-left: 4px;padding-top: 4px;padding-right: 4px;padding-bottom: 4px;">
+                        <!-- inspirations and Discover  -->
+                        </div>
+                            <div class="">
+                                <div class="">
+                                    <p class="tw-text-start tw-text-slate-600 tw-text-lg tw-font-medium tw-font-['Outfit'] tw-leading-snug  tw-w-36">5 Design Tips for Small Spaces</p>
+                                </div>
+                                
+        
+                                <div class="">
+                                    <p class="tw-text-start tw-text-slate-500 tw-text-sm tw-font-medium tw-font-['Outfit']  tw-w-40">Who says that you can’t make a small room look amazing?</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                       
+    
+                        <div class="tw-flex tw-items-center tw-gap-3 justify-center"> 
+                            <!-- start of relative -->
+                             <div class="tw-relative">
+                                <!-- img -->
+                                 <img class="tw-w-48 tw-h-32 tw-rounded-lg " src="assets/logo/10459_rectangle.svg" alt="" style="padding-left: 4px;padding-top: 4px;padding-right: 4px;padding-bottom: 4px;">
+                                    <!-- inspirations and Discover  -->
+                                    </div>
+                                    <div class="">
+                                        <div class="">
+                                            <p class="tw-text-start tw-text-slate-600 tw-text-lg tw-font-medium tw-font-['Outfit'] tw-leading-snug  tw-w-36">5 Design Tips for Small Spaces</p>
+                                        </div>
+                                        
+                
+                                        <div class="">
+                                            <p class="tw-text-start tw-text-slate-500 tw-text-sm tw-font-medium tw-font-['Outfit']  tw-w-40">Who says that you can’t make a small room look amazing?</p>
+                                        </div>
+                                    </div>
+                                        
+                                    </div>
+    
+                                <div class="tw-flex tw-items-center tw-justify-center tw-gap-3">
+                                        <!-- start of relative -->
+                                         <div class="tw-relative">
+                                            <!-- img -->
+                                             <img class="tw-w-48 tw-h-32 tw-rounded-lg" src="assets/logo/10466_rectangle.svg" alt="" style="padding-left: 4px;padding-top: 4px;padding-right: 4px;padding-bottom: 4px;">
+                                                <!-- inspirations and Discover  -->
+                                                </div>
+                                                <div class="">
+                                                    <div class="">
+                                                        <p class="tw-text-start tw-text-slate-600 tw-text-lg tw-font-medium tw-font-['Outfit'] tw-leading-snug  tw-w-36">5 Design Tips for Small Spaces</p>
+                                                    </div>
+                                                    
+                            
+                                                    <div class="">
+                                                        <p class="tw-text-start tw-text-slate-500 tw-text-sm tw-font-medium tw-font-['Outfit']  tw-w-40">Who says that you can’t make a small room look amazing?</p>
+                                                    </div>
+                                                </div>
+                                                    
+                                                </div>
+                                            </div>
+        </div>
+      
+
+        <!-- 
+        .##.....##.########..######......###.......##.....##.########.##....##.##.....##.....######...######..########..####.########..########
+        .###...###.##.......##....##....##.##......###...###.##.......###...##.##.....##....##....##.##....##.##.....##..##..##.....##....##...
+        .####.####.##.......##.........##...##.....####.####.##.......####..##.##.....##....##.......##.......##.....##..##..##.....##....##...
+        .##.###.##.######...##...####.##.....##....##.###.##.######...##.##.##.##.....##.....######..##.......########...##..########.....##...
+        .##.....##.##.......##....##..#########....##.....##.##.......##..####.##.....##..........##.##.......##...##....##..##...........##...
+        .##.....##.##.......##....##..##.....##....##.....##.##.......##...###.##.....##....##....##.##....##.##....##...##..##...........##...
+        .##.....##.########..######...##.....##....##.....##.########.##....##..#######......######...######..##.....##.####.##...........##...
+         -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById("mega_menu_products_modal");
+            // Get the modal
+            // var blog = document.getElementById("mega_menu_blog_modal_div");
+            var idea_blog_modal = document.getElementById("mega_menu_idea_blog_modal");
+    
+            // Get the button that opens the modal
+            var products_btn = document.getElementById("mega_menu_products_btn");
+
+            // Get the button that opens the modal
+            var products_btn_mobile = document.getElementById("mega_menu_products_btn_mobile");
+            
+            // Get the button that opens the modal
+            // var other_btn1 = document.getElementById("other_btn1");
+            
+            // Get the button that opens the modal
+            var other_btn2 = document.getElementById("other_btn2");
+           
+            // Get the button that opens the modal
+            var idea_blog_btn = document.getElementById("mega_menu_idea_blog_btn");
+            
+            // Get the button that opens the modal
+            var other_btn4 = document.getElementById("other_btn4");
+            
+            // Get the button that opens the modal
+            // var other_btn5 = document.getElementById("other_btn5");
+    
+            // Get the <span> element that closes the modal
+            var close1 = document.getElementById("close1");
+            var close2 = document.getElementById("close2");
+            var close3 = document.getElementById("close3");
+            var close4 = document.getElementById("close4");
+            var close5 = document.getElementById("close5");
+    
+            // When the user clicks the button, open the modal 
+            products_btn.onmouseenter = function() {
+                modal.style.display = "flex";
+                idea_blog_modal.style.display = "none";
+                // blog.style.display = "none";
+            }
+            // When the user clicks the button, open the modal 
+            // other_btn3.onmouseenter = function() {
+            //     modal2.style.display = "flex";
+            //     modal.style.display = "none";
+            // }
+            // When the user clicks the button, open the modal 
+            products_btn_mobile.onclick = function() {
+                modal.style.display = "flex";
+            }
+            
+            // When the user clicks the button, open the modal 
+            // other_btn1.onclick = function() {
+            //   modal.style.display = "none";
+            // }
+            // When the user clicks the button, open the modal 
+            other_btn2.onmouseenter = function() {
+              modal.style.display = "none";
+            //   blog.style.display = "none";
+            }
+            // When the user clicks the button, open the modal 
+            mega_menu_idea_blog_btn.onmouseenter = function() {
+                
+                idea_blog_modal.style.display = "flex";
+                modal.style.display = "none";
+            //   blog.style.display = "flex";
+            }
+            // When the user clicks the button, open the modal 
+            other_btn4.onclick = function() {
+              modal.style.display = "none";
+            //   modal2.style.display = "none";
+            }
+            // When the user clicks the button, open the modal 
+            // other_btn5.onclick = function() {
+            //   modal.style.display = "none";
+            //   modal2.style.display = "none";
+            // }
+    
+            // When the user clicks on <span> (x), close the modal
+            close1.onclick = function() {
+                modal.style.display = "none";
+                idea_blog_modal.style.display = "none";
+            }
+            close2.onclick = function() {
+                modal.style.display = "none";
+                idea_blog_modal.style.display = "none";
+            }
+            close3.onclick = function() {
+                modal.style.display = "none";
+                idea_blog_modal.style.display = "none";
+            }
+            close4.onclick = function() {
+                modal.style.display = "none";
+                idea_blog_modal.style.display = "none";
+            }
+            close5.onclick = function() {
+                modal.style.display = "none";
+                idea_blog_modal.style.display = "none";
+            }
+    
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+                }
+                // if (event.target == blog) {
+                // blog.style.display = "none";
+                // }
+            }
+
+            window.onclick = function(event) {
+                if (event.target == idea_blog_modal) {
+                idea_blog_modal.style.display = "none";
+                }
+                // if (event.target == blog) {
+                // blog.style.display = "none";
+                // }
+            }
+           
+            product.onmouseleave = function() {
+                modal.style.display = "none";
+            }
+
+            idea_blog.onmouseleave = function() {
+            idea_blog_modal.style.display = "none";
+            }
+            // blogs.onmouseleave = function() {
+            //     blog.style.display = "none";
+            // }
+        
+        </script>
+    
+       
+    </header>
+
+    <!-- 
+    .##.....##..#######..##.....##.########.########.....###.....######...########....##.....##..#######..##.....##.########.########.....###.....######...########....##.....##..#######..##.....##.########.########.....###.....######...########
+    .##.....##.##.....##.###...###.##.......##.....##...##.##...##....##..##..........##.....##.##.....##.###...###.##.......##.....##...##.##...##....##..##..........##.....##.##.....##.###...###.##.......##.....##...##.##...##....##..##......
+    .##.....##.##.....##.####.####.##.......##.....##..##...##..##........##..........##.....##.##.....##.####.####.##.......##.....##..##...##..##........##..........##.....##.##.....##.####.####.##.......##.....##..##...##..##........##......
+    .#########.##.....##.##.###.##.######...########..##.....##.##...####.######......#########.##.....##.##.###.##.######...########..##.....##.##...####.######......#########.##.....##.##.###.##.######...########..##.....##.##...####.######..
+    .##.....##.##.....##.##.....##.##.......##........#########.##....##..##..........##.....##.##.....##.##.....##.##.......##........#########.##....##..##..........##.....##.##.....##.##.....##.##.......##........#########.##....##..##......
+    .##.....##.##.....##.##.....##.##.......##........##.....##.##....##..##..........##.....##.##.....##.##.....##.##.......##........##.....##.##....##..##..........##.....##.##.....##.##.....##.##.......##........##.....##.##....##..##......
+    .##.....##..#######..##.....##.########.##........##.....##..######...########....##.....##..#######..##.....##.########.##........##.....##..######...########....##.....##..#######..##.....##.########.##........##.....##..######...########
+    -->
+
+    <div class="col-center-center ">
+            <div class="tw-w-full tw-h-16 tw-bg-white"><br></div>
+
+            <!-- 
+            .##.....##.########.########...#######......######..########..######..########.####..#######..##....##............................................................
+            .##.....##.##.......##.....##.##.....##....##....##.##.......##....##....##.....##..##.....##.###...##............................................................
+            .##.....##.##.......##.....##.##.....##....##.......##.......##..........##.....##..##.....##.####..##............................................................
+            .#########.######...########..##.....##.....######..######...##..........##.....##..##.....##.##.##.##............................................................
+            .##.....##.##.......##...##...##.....##..........##.##.......##..........##.....##..##.....##.##..####............................................................
+            .##.....##.##.......##....##..##.....##....##....##.##.......##....##....##.....##..##.....##.##...###............................................................
+            .##.....##.########.##.....##..#######......######..########..######.....##....####..#######..##....##............................................................
+        -->
+            <div class="tw-z-10 tw-w-full tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100/0 tw-h-fit col-between-center">
+            
+                <div class="tw-grid tw-content-center tw-w-full tw-grid-flow-row tw-grid-cols-12 tw-gap-4 tw-px-4 laptop:tw-w-laptop_1280px">
+                            <!-- 
+                            .##.......########.########.########....########.########.##.....##.########.....######..########....###......................................................
+                            .##.......##.......##..........##..........##....##........##...##.....##.......##....##....##......##.##.....................................................
+                            .##.......##.......##..........##..........##....##.........##.##......##.......##..........##.....##...##....................................................
+                            .##.......######...######......##..........##....######......###.......##.......##..........##....##.....##...................................................
+                            .##.......##.......##..........##..........##....##.........##.##......##.......##..........##....#########...................................................
+                            .##.......##.......##..........##..........##....##........##...##.....##.......##....##....##....##.....##...................................................
+                            .########.########.##..........##..........##....########.##.....##....##........######.....##....##.....##...................................................
+                            -->
+                            <div class="tw-col-span-12 tw-py-8 square:tw-col-start-2 tw-bg-red-100/0 square:tw-col-span-6 tw-h-fit tablet:tw-h-80 row-center-center square:row-start-center">
+                                <div class="tw-w-fit tw-h-fit tablet:tw-h-80 col-center-start laptop:tw-m-0">
+                                    <!-- HEADER HERO -->
+                                    <h1 class="tw-text-3xl big_mobile:tw-text-5xl tablet:tw-text-5xl tw-antialiased tw-font-semibold tw-leading-none tw-tracking-[-2px] tw-capitalize blue_bor1der tw-drop-shadow-lg  tw-text-slate-700">the leading tile<br class="tw-hidden tablet:tw-hidden"> supplier <br class="tw-hidden big_mobile:tw-block"> in the <br class="tw-hidden big_mobile:tw-hidden"> philippines</h1>
+                                    
+                                    <!-- SUB HEADER -->
+                                    <sub class="tw-mt-1 tw-text-xl tw-antialiased tw-font-light tw-leading-none tw-font-outfit tw tw-text-slate-400">Unmatched Quality and Selection<br class="tw-block square:tw-block"> for Your Tiling Needs</sub>
+
+                                    <!-- BUTTON -->
+                                    <button class="tw-px-8 tw-py-3 tw-mt-8 tw-text-xl tw-font-medium tw-leading-none tw-text-white tw-transition-colors tw-rounded-full tw-bg-fc-700 tw-font-outfit tw-w-fit hover:tw-bg-white hover:tw-text-fc-700 hover:tw-shadow-lg">Shop Now</button>
+                                </div>
+                            </div>
+                            <!-- 
+                            .########..####..######...##.....##.########....####..######...#######......................................................................
+                            .##.....##..##..##....##..##.....##....##........##..##....##.##.....##.....................................................................
+                            .##.....##..##..##........##.....##....##........##..##.......##.....##.....................................................................
+                            .########...##..##...####.#########....##........##...######..##.....##.....................................................................
+                            .##...##....##..##....##..##.....##....##........##........##.##.....##.....................................................................
+                            .##....##...##..##....##..##.....##....##........##..##....##.##.....##.....................................................................
+                            .##.....##.####..######...##.....##....##.......####..######...#######......................................................................
+                            -->
+                            <div class="tw-hidden tw-col-span-4 tw-bg-red-100/0 laptop:tw-col-span-4 tw-h-80 row-start-center square:tw-block laptop:tw-rounded-2xl tw-overflow-clip ">
+                                <img src="assets/tera2.png" alt="" class="tw-block tw-w-80">
+                                
+                            </div>
+
+                </div>
+                <!-- 
+                .########..########.##........#######..##......##....##.......####..######..########...............................................................
+                .##.....##.##.......##.......##.....##.##..##..##....##........##..##....##....##..................................................................
+                .##.....##.##.......##.......##.....##.##..##..##....##........##..##..........##..................................................................
+                .########..######...##.......##.....##.##..##..##....##........##...######.....##..................................................................
+                .##.....##.##.......##.......##.....##.##..##..##....##........##........##....##..................................................................
+                .##.....##.##.......##.......##.....##.##..##..##....##........##..##....##....##..................................................................
+                .########..########.########..#######...###..###.....########.####..######.....##..................................................................
+                -->
+                <div class="tw-w-full tw-h-16 tw-gap-2 tw-px-2 tw-mb-4 tw-text-base tw-leading-none tw-list-none tablet:tw-h-12 tablet:tw-mb-0 tablet:tw-text-lg tablet:tw-gap-4 col-center-center tablet:row-center-center green_border1 tw-text-slate-400">
+                    <div class="tw-w-full tw-h-fit tablet:row-end-center blue_border1">
+                        <ul class="tw-gap-4 tablet:tw-gap-6 row-center-center">
+                            <a href="" class=""><li class="">Bathroom</li></a>
+                            <a href="" class=""><li class="">Kitchen</li></a>
+                            <a href="" class=""><li class="">Indoor</li></a>
+                            <a href="" class=""><li class="">Outdoor</li></a>
+                        </ul>
+                        
+                    </div>
+                    <div class="tw-w-full tw-h-fit tablet:row-start-center pink_border1">
+                        <ul class="tw-gap-4 tablet:tw-gap-6 row-center-center">
+                            <a href="" class=""><li class="">Floor</li></a>
+                            <a href="" class=""><li class="">Walls</li></a>
+                            <a href="" class=""><li class="">Vinyls</li></a>
+                            <a href="" class=""><li class="tw-truncate ">Sanitary Wares</li></a>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 
+            .########..########...#######..##.....##..#######.....########.....###....##....##.##....##.########.########.......................................................
+            .##.....##.##.....##.##.....##.###...###.##.....##....##.....##...##.##...###...##.###...##.##.......##.....##......................................................
+            .##.....##.##.....##.##.....##.####.####.##.....##....##.....##..##...##..####..##.####..##.##.......##.....##......................................................
+            .########..########..##.....##.##.###.##.##.....##....########..##.....##.##.##.##.##.##.##.######...########.......................................................
+            .##........##...##...##.....##.##.....##.##.....##....##.....##.#########.##..####.##..####.##.......##...##........................................................
+            .##........##....##..##.....##.##.....##.##.....##....##.....##.##.....##.##...###.##...###.##.......##....##.......................................................
+            .##........##.....##..#######..##.....##..#######.....########..##.....##.##....##.##....##.########.##.....##......................................................
+        -->
+            <div class="tw-w-full col-center-center tw-h-fit tw-bg-sky-50/0"> 
+                <div class="tw-grid tw-w-full tw-grid-flow-row tw-grid-cols-4 tw-gap-4 tablet:tw-p-4 tablet:tw-grid-cols-8 square:tw-grid-cols-12 laptop:tw-mx-10 laptop:tw-w-laptop_1280px tw-h-fit tw-bg-sky-50/0">
+                    <div class="tw-hidden tablet:tw-block tablet:tw-col-span-8 square:tw-col-span-12 laptop:tw-col-start-2 laptop:tw-col-span-10 tw-h-fit tw-bg-violet-100/0">
+                        <img src="/assets/banner.svg" alt="" class="">
+                    </div>
+                    
+                    <div class="tw-block tw-col-span-4 tablet:tw-hidden tw-bg-violet-100">
+                        <img src="/assets/banner_sm.svg" alt="" class="tw-w-full">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 
+            .########.########....###....########.##.....##.########..########.########.....########..########...#######..########..##.....##..######..########..######......................
+            .##.......##.........##.##......##....##.....##.##.....##.##.......##.....##....##.....##.##.....##.##.....##.##.....##.##.....##.##....##....##....##....##.....................
+            .##.......##........##...##.....##....##.....##.##.....##.##.......##.....##....##.....##.##.....##.##.....##.##.....##.##.....##.##..........##....##...........................
+            .######...######...##.....##....##....##.....##.########..######...##.....##....########..########..##.....##.##.....##.##.....##.##..........##.....######......................
+            .##.......##.......#########....##....##.....##.##...##...##.......##.....##....##........##...##...##.....##.##.....##.##.....##.##..........##..........##.....................
+            .##.......##.......##.....##....##....##.....##.##....##..##.......##.....##....##........##....##..##.....##.##.....##.##.....##.##....##....##....##....##.....................
+            .##.......########.##.....##....##.....#######..##.....##.########.########.....##........##.....##..#######..########...#######...######.....##.....######......................
+            -->
+            <div class="tw-w-full tw-h-fit row-center-center tw-font-outfit">
+                <div class="tw-w-full tw-h-fit laptop:tw-w-laptop_1280px col-start-start laptop:col-start-center blue_bor1der tw-touch-auto">
+
+                    <div class="tw-w-full tw-h-16 tw-px-4 laptop:tw-w-square_1024px row-between-center blue_borde1r laptop:tw-px-0">
+                        <h4 class="tw-text-xl tw-font-medium tablet:tw-text-2xl laptop:tw-text-3xl tw-text-slate-600 tw-font-outfit">Featured Products</h4>
+                        <button class="tw-px-4 tw-py-2 tw-font-medium tw-leading-none tw-bg-white tw-border-2 tw-rounded-full tablet:tw-text-xl tw-text-md laptop:tw-px-8 laptop:tw-py-3 laptop:tw-text-xl tw-border-slate-500 row-center-center tw-text-slate-500">Browse More</button>
+                    </div>
+
+                 
+
+                    <!-- <div class="tw-relative">
+                        <img src="assets/products/product_thumb1.png" alt="">
+                        <div class="tw-absolute tw-top-0 tw-right-0">
+                            Featured Products
+                        </div>
+                    </div> -->
+
+                    <div class="tw-relative tw-w-full tw-h-fit row-start-center tw-rounded-xl pink_bord1er tw-touch-auto ">
+                        <button id=transform_left2 class="tw-absolute tw-z-10 tw-hidden tw-w-20 tw-opacity-50 laptop:row-center-center tw-h-fit" type="button">
+                            <svg class="hover:tw-scale-110 smooth_transition" width="25" height="39" viewBox="0 0 28 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2.62561L0.312808 24.3128L22 46" stroke="#B2BCCC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                        </button>
+                    
+
+                        <div class="tw-w-full tw-overflow-x-scroll tw-h-fit laptop:tw-overflow-clip tw-gap-x-4 tw-touch-auto row-start-center">
+                            <div id="slider2" class="tw-pt-4 tw-pb-8 tw-transition-transform tw-duration-1000 tw-h-fit laptop:tw-overflow-clip tw-w-fit pink_bord1er row-start-center">
+                                <div class="tw-pl-4 laptop:tw-pl-0 tw-w-fit tw-h-fit laptop:tw-w-laptop_1280px row-center-center blue_border1 tw-gap-x-4 laptop:tw-gap-x-12">
+                                    
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb1.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb2.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb3.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb_hover1.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                
+                                </div>
+                                
+                                <div class="tw-pl-4 laptop:tw-pl-0 tw-w-fit tw-h-fit laptop:tw-w-laptop_1280px row-center-center blue_border1 tw-gap-x-4 laptop:tw-gap-x-12">
+                                    
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb1.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb2.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb3.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tw-w-56 tw-bg-white tw-shadow-md tw-h-80 tw-rounded-xl row-center-center card-border col-start-start tw-font-outfit">
+                                        <div class="tw-w-48 tw-h-fit col-start-start">
+                                            <div class="tw-relative tw-w-48 tw-h-48">
+                                                <div class="tw-absolute tw-w-48 tw-h-48">
+                                                    <div class="tw-w-full tw-h-full tw-py-3 row-end-start">
+                                                        <span class="tw-h-6 tw-px-2 tw-text-xs tw-font-light tw-text-white tw-rounded-l-full row-center-center tw-w-fit tw-bg-fc-700" >10%</span>
+
+                                                    </div>
+                                                </div>
+                                                <img src="assets/products/product_thumb_hover1.png" alt="" class="tw-block tw-w-48 tw-h-48">
+                                            </div>
+
+                                            <div class="tw-w-full tw-h-full tw-gap-1 tw-pt-1 col-center-start">
+                                                <span class="tw-text-lg tw-font-semibold tw-leading-none tw-text-slate-700">7218</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">75x150 cm</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Big Marble Design Tile</span>
+                                                <span class="tw-text-xs tw-font-normal tw-leading-none tw-text-slate-700">Porcelain Glazed Glossy</span>
+                                                <span class="tw-text-base tw-font-semibold tw-leading-none tw-text-fc-700">₱ 2,490.00</span>
+
+                                            </div>
+                                        </div>  
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button id=transform_right2 class="tw-absolute tw-right-0 tw-z-10 tw-hidden tw-w-20 tw-opacity-50 laptop:row-center-center tw-h-80" type="button">
+                            <svg class="hover:tw-scale-110 smooth_transition" width="25" height="39" viewBox="0 0 28 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 46L24.6872 24.3128L3 2.62562" stroke="#B2BCCC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <script>
+                        var transform_left2 = document.getElementById("transform_left2");
+                        var transform_right2 = document.getElementById("transform_right2");
+                        transform_left2.onclick = function() {
+                            slider2.style.transform = "translateX(0%)";
+                        }
+                        transform_right2.onclick = function() {
+                            slider2.style.transform = "translateX(-1280px)";
+                        }
+                    </script>
+                </div>
+            </div>
+
+
+            <!-- 
+            .########..########.....###....##....##..######..##.....##.......###....##....##.########......######.....###....##........######..##.....##.......................................
+            .##.....##.##.....##...##.##...###...##.##....##.##.....##......##.##...###...##.##.....##....##....##...##.##...##.......##....##.##.....##.......................................
+            .##.....##.##.....##..##...##..####..##.##.......##.....##.....##...##..####..##.##.....##....##........##...##..##.......##.......##.....##.......................................
+            .########..########..##.....##.##.##.##.##.......#########....##.....##.##.##.##.##.....##....##.......##.....##.##.......##.......##.....##.......................................
+            .##.....##.##...##...#########.##..####.##.......##.....##....#########.##..####.##.....##....##.......#########.##.......##.......##.....##.......................................
+            .##.....##.##....##..##.....##.##...###.##....##.##.....##....##.....##.##...###.##.....##....##....##.##.....##.##.......##....##.##.....##.......................................
+            .########..##.....##.##.....##.##....##..######..##.....##....##.....##.##....##.########......######..##.....##.########..######...#######........................................
+            -->
+
+            <div class="tw-w-full tw-grid-cols-10 laptop:tw-grid-cols-12 tablet:tw-px-4 square:tw-grid-flow-row square:tw-grid col-center-center tw-h-fit tw-bg-sky-50/0 laptop:tw-w-laptop_1280px "> 
+                <div class="tw-w-full tw-col-span-10 laptop:tw-col-start-2 tablet:tw-gap-4 col-start-start tablet:row-between-center tw-h-fit tw-bg-sky-50/0">
+                    <div class=" tw-h-fit">
+                        <img src="/assets/branch_sm.png" alt="" class="tw-block tw-w-full tablet:tw-hidden">
+                        <img src="/assets/branch.png" alt="" class="tw-hidden tw-w-full tablet:tw-block">
+                    </div>
+                    <div class=" tw-h-fit">
+                        <img src="/assets/calcu_sm.png" alt="" class="tw-block tw-w-full tablet:tw-hidden">
+                        <img src="/assets/calcu.png" alt="" class="tw-hidden tw-w-full tablet:tw-block">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            ..######..##.....##..#######..##......##.########...#######...#######..##.....##.......................................................................................
+            .##....##.##.....##.##.....##.##..##..##.##.....##.##.....##.##.....##.###...###.......................................................................................
+            .##.......##.....##.##.....##.##..##..##.##.....##.##.....##.##.....##.####.####.......................................................................................
+            ..######..#########.##.....##.##..##..##.########..##.....##.##.....##.##.###.##.......................................................................................
+            .......##.##.....##.##.....##.##..##..##.##...##...##.....##.##.....##.##.....##.......................................................................................
+            .##....##.##.....##.##.....##.##..##..##.##....##..##.....##.##.....##.##.....##.......................................................................................
+            ..######..##.....##..#######...###..###..##.....##..#######...#######..##.....##.......................................................................................
+            -->
+            <div class="tw-w-full tablet:tw-py-4 tw-h-fit row-center-center tw-font-outfit">
+                <div class="tw-items-center tablet:tw-gap-4 col-start-start tablet:tw-grid tablet:tw-grid-flow-col tablet:tw-grid-cols-8 square:tw-grid-cols-10 laptop:tw-grid-cols-12 tablet:tw-px-4 tw-w-laptop_1280px ">
+                    <div class="tw-col-span-4 square:tw-col-span-5 tablet:tw-col-span-4 laptop:tw-col-start-2">
+                        <img src="assets/showroom.png" alt="" class="tw-hidden tw-w-full tablet:tw-block">
+                        <img src="assets/showroom_sm.png" alt="" class="tw-block tw-w-full square:tw-h-80 tablet:tw-hidden">
+                    </div>
+
+                    <div class="tw-h-full tw-col-span-4 tw-gap-2 tw-p-8 tablet:tw-px-4 tablet:tw-py-2 square:tw-col-span-5 tablet:tw-col-span-4 col-center-start">
+                        <h4 class="tw-text-2xl tw-font-medium tw-leading-none square:tw-text-3xl tw-text-slate-600">Virtual Showroom</h4>
+                        <p class="tw-w-full tw-text-lg tw-font-light tw-leading-tight square:tw-text-xl tw-h-fit tw-text-slate-600 tablet:tw-overflow-clip">
+                            Discover a world of tile inspiration and design possibilities. 
+                            <br>
+                            From stunning tile patterns and color combinations to innovative tile applications. 
+                            <br>
+                            <br>
+                            Dive into our blogs to explore the latest trends, practical tips for tile selection and maintenance, and real-life tile transformations. 
+                    
+                        </p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            .########..#######...#######..########.########.########......................................................................................................................
+            .##.......##.....##.##.....##....##....##.......##.....##.....................................................................................................................
+            .##.......##.....##.##.....##....##....##.......##.....##.....................................................................................................................
+            .######...##.....##.##.....##....##....######...########......................................................................................................................
+            .##.......##.....##.##.....##....##....##.......##...##.......................................................................................................................
+            .##.......##.....##.##.....##....##....##.......##....##......................................................................................................................
+            .##........#######...#######.....##....########.##.....##.....................................................................................................................
+            -->
+            <div class="tw-w-full tw-mt-0 tablet:tw-mt-4 tw-h-fit pink_border1 tw-bg-slate-50 row-center-center tw-font-outfit">
+                <div class="tw-w-full tw-h-fit laptop:tw-w-laptop_1280px tw-bg-slate-100/0 col-start-center">
+                    <div class="tw-grid tw-w-full tw-grid-flow-row tw-gap-4 tw-px-8 tw-py-0 tablet:tw-p-8 tablet:tw-grid-flow-col tablet:tw-grid-cols-12 square:tw-grid-cols-12 tw-h-fit">
+                        
+                        <div class="tw-order-4 tw-col-span-4 tw-mb-8 tablet:tw-order-1 col-start-center tablet:col-start-start">
+                            <div class="tw-gap-4 tw-h-fit col-start-center square:row-start-center">
+                                <img src="assets/fc_logo.svg" alt="" class="tw-block tw-h-12">
+                                <span class="tw-text-2xl tw-text-slate-600">FLOOR CENTER</span> 
+                            </div>
+                            <div class="tw-mt-2 tablet:tw-w-full tw-w-72">
+                                <p class="tw-text-lg tw-font-light tw-leading-tight tw-text-center tablet:tw-text-left tw-text-slate-500">Unmatched Quality and Selection for Your Tiling Needs</p>
+                            </div>
+                            <div class="tw-mt-3">
+                                <span class="tw-text-lg tw-font-light tw-leading-tight tw-text-slate-500">The Leading Tile Supplier In The Philippines</span>
+                            </div>
+                            <div class="tw-gap-3 tw-mt-6 tw-w-fit row-start-center tw-h-fit">
+                                <button class=""><img src="assets/social/fb.svg" alt="" class="tw-h-8"></button>
+                                <button class=""><img src="assets/social/tw.svg" alt="" class="tw-h-8"></button>
+                                <button class=""><img src="assets/social/yt.svg" alt="" class="tw-h-8"></button>
+                                <button class=""><img src="assets/social/in.svg" alt="" class="tw-h-8"></button>
+                            </div>
+                        </div>
+                        
+                        <div class="tw-order-3 tw-col-span-2 tw-mb-6 tablet:tw-order-2 tw-h-fit row-center-start">
+                            <ul class="tw-gap-3 tw-text-lg tw-font-light tw-leading-tight tw-w-fit tw-h-fit col-start-start tw-text-slate-500">
+                                <lh class="tw-mb-3 tw-text-xl tw-font-semibold tw-text-slate-600">Products</lh>
+                                <li class="">Shapes and Sizes</li>
+                                <li class="">Looks and Colors</li>
+                                <li class="">Material and Finishes</li>
+                                <li class="">Vinyl and Borders</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="tw-order-2 tw-col-span-2 tw-mb-6 tablet:tw-order-3 tw-h-fit row-center-start">
+                            <ul class="tw-gap-3 tw-text-lg tw-font-light tw-leading-tight tw-w-fit tw-h-fit col-start-start tw-text-slate-500">
+                                    <lh class="tw-mb-3 tw-text-xl tw-font-semibold tw-text-slate-600">Company</lh>
+                                    <li class="">Ideas and Blogs</li>
+                                    <li class="">About Us</li>
+                                    <li class="">Branches</li>
+                                    <li class="">Contact Us</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="tw-order-1 tw-col-span-4 tw-gap-4 tablet:tw-order-4 tablet:tw-gap-6 tw-h-60 col-center-center square:col-start-start">
+                            <div class="tw-w-fit">
+                                <span class="tw-text-2xl tw-font-semibold tw-leading-tight tw-text-slate-600">Subscribe to our Newsletter</span>
+                            </div>
+                            <div class="tw-w-fit">
+                                <p class="tw-text-lg tw-font-light tw-leading-tight tw-text-center tw-text-slate-500 tablet:tw-text-left">
+                                    To get your 5% off on your first Purchase. 
+                                </p>
+                            </div>
+
+                            <div class="tw-w-full tw-border tw-border-solid row-start-start tw-border-slate-200">
+                                <input put type="email" placeholder="Enter Your Email" name="" id="" class="tw-w-full tw-h-16 tw-font-normal tw-bg-white tw-border-none z-10 tw-text-md tw-text-slate-500 tw-placeholder:tw-text-slate-200 placeholder:tw-font-light placeholder:tw-text-lg"></input>
+                                    <button class="tw-w-20 tw-h-16 tw-ml-[1px] tw-bg-white tw-border-l-2 tw-border-solid row-center-center tw-border-slate-100">
+                                        <img src="assets/social/Envelope.svg" alt="" class="">
+                                    </button>
+                                
+                            </div>
+                        
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="tw-w-full tw-h-full tw-px-4 laptop:tw-px-8 col-start-start tw-bg-violet-100/0 ">
+                        <div class="tw-w-full tw-h-4 tw-border-t-2 tw-border-solid tw-border-slate-200 "></div>
+
+                        <div class="tw-flex-col-reverse tw-w-full tw-gap-2 tw-font-light tw-h-fit col-start-start tablet:row-between-center tw-font-outfit tw-text-slate-500">
+                            
+                            <div class="tw-h-full tw-w-fit row-center-center">
+                                <span class="tw-text-lg ">Copyright 2023 Floor Center. All Rights Reserved.</span>
+                            </div>
+                            <div class="tw-h-full tw-w-fit row-center-center tw-gap-x-4">
+                                <span class="tw-text-lg">We Accept:</span>
+                                <button class="tw-h-8 tw-w-fit row-center-center">
+                                    <img src="assets/visa.png" alt="" class="tw-w-auto tw-h-4">
+                                </button>
+                                <button class="tw-h-8 tw-w-fit row-center-center">
+                                    <img src="assets/master.png" alt="" class="tw-w-auto tw-h-4">
+                                </button>
+                                <button class="tw-h-8 tw-w-fit row-center-center">
+                                    <img src="assets/america.png" alt="" class="tw-w-auto tw-h-4">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="tw-w-full tw-h-6"></div>
+
+    
+    </div>
+  
+
+    
+
+    
+</body>
+</html> 
