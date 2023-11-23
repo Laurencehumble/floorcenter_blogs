@@ -165,7 +165,9 @@ module.exports = {
         '240': '960px',
         '256': '1024px',
         'square_1024px' : '1024px',
-        'laptop_1280px': '1280px'
+        'laptop_1280px': '1280px',
+        'desktop_1356px': '1356px'
+        
         
        
       },
