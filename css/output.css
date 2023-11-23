@@ -1488,6 +1488,10 @@ html {
   border-top-width: 2px;
 }
 
+.tw-border-t{
+  border-top-width: 1px;
+}
+
 .tw-border-solid{
   border-style: solid;
 }
@@ -2482,6 +2486,10 @@ html {
   .big_mobile\:tw-text-5xl{
     font-size: 48px;
   }
+
+  .big_mobile\:tw-text-3xl{
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 768px){
@@ -2682,6 +2690,10 @@ html {
 
   .tablet\:tw-text-xl{
     font-size: 20px;
+  }
+
+  .tablet\:tw-text-3xl{
+    font-size: 30px;
   }
 
   .hover\:tablet\:tw-h-20:hover{
