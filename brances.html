@@ -7,12 +7,19 @@
     <title>Floor Center</title>
      
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
 
     <!-- <link rel="stylesheet" href="css/build.css"> -->
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/mega_menu.css">
 
+    <style>
+        #googleMap {
+            width: 80%;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
     <img src="assets/thumbnail.jpg" alt="" class="tw-block tw-w-full tw-h-0">
@@ -1175,7 +1182,6 @@
     -->
 
     <div class="col-center-center ">
-            <!-- <div class="tw-w-full tw-h-16 tw-bg-white"><br></div> -->
 
             <!-- 
             .##.....##.########.########...#######......######..########..######..########.####..#######..##....##............................................................
@@ -1186,969 +1192,123 @@
             .##.....##.##.......##....##..##.....##....##....##.##.......##....##....##.....##..##.....##.##...###............................................................
             .##.....##.########.##.....##..#######......######..########..######.....##....####..#######..##....##............................................................
         -->
-        <div class="tw-flex tw-items-center tw-justify-center tw-shadow-lg tw-w-fit tw-h-fit">
-           
-            <div class="tw-relative tw-flex tw-items-center tw-justify-center tw-w-full tw-pt-8 tw-overflow-hidden tw-bg-white tw-shadow-lg">
-                
-                <ul>
-                    <li  class="mySlides tw-h-144"><img class="tw-object-cover tw-w-full" src="assets/logo/1tile_survey.jpg" alt="">
-                        <div class="tw-absolute tw-inset-0 tw-transition-opacity tw-bg-slate-700/50"></div>
-                        <div class="tw-absolute tw-top-0 tw-left-0 tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full">
-                        <h2 class="tw-text-3xl big_mobile:tw-text-6xl tablet:tw-text-6xl tw-antialiased tw-font-semibold tw-leading-none tw-tracking-[-2px] tw-capitalize blue_bor1der tw-drop-shadow-lg  tw-text-white">All Categories</h2>
+        <!-- <div class="tw-flex tw-justify-center tw-w-full tw-pt-12 tw-h-fit">
+    
+            <div class="tw-relative tw-flex tw-justify-center tw-w-full tw-overflow-hidden">
+
+                <div class="tw-relative tw-flex tw-items-center tw-justify-center tw-w-full tw-bg-gray-100 tw-h-80">
+                    
+                    <div class="tw-relative tw-flex tw-flex-col ">
+                        <div class>
+                            <p class="tw-text-center tw-text-gray-600 tw-text-4xl tw-font-medium tw-font-['Outfit'] tw-tracking-widest">Welcome To Floor Center</p>
                         </div>
-                    </li>
-                    <li  class="mySlides tw-h-144"><img class="tw-object-cover tw-w-full" src="assets/logo/2tile_survey.jpg" alt="">
-                        <div class="tw-absolute tw-inset-0 tw-transition-opacity tw-bg-slate-700/50"></div>
-                        <div class="tw-absolute tw-top-0 tw-left-0 tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full">
-                        <h2 class="tw-text-3xl big_mobile:tw-text-6xl tablet:tw-text-6xl tw-antialiased tw-font-semibold tw-leading-none tw-tracking-[-2px] tw-capitalize blue_bor1der tw-drop-shadow-lg  tw-text-white">Inspiration</h2>
-                        </div>
-                    </li>
-                    <li  class="mySlides tw-h-144"><img class="tw-object-cover tw-w-full" src="assets/logo/3tile_survey.jpg" alt="">
-                        <div class="tw-absolute tw-inset-0 tw-transition-opacity tw-bg-slate-700/50"></div>
-                        <div class="tw-absolute tw-top-0 tw-left-0 tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full">
-                        <h2 class="tw-text-3xl big_mobile:tw-text-6xl tablet:tw-text-6xl tw-antialiased tw-font-semibold tw-leading-none tw-tracking-[-2px] tw-capitalize blue_bor1der tw-drop-shadow-lg  tw-text-white">Tile Guides</h2>
-                        </div>
-                    </li>
-                    <li  class="mySlides tw-h-144"><img class="tw-object-cover tw-w-full" src="assets/logo/4tile_survey.jpg" alt="">
-                        <div class="tw-absolute tw-inset-0 tw-transition-opacity tw-bg-slate-700/50"></div>
-                        <div class="tw-absolute tw-top-0 tw-left-0 tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full">
-                        <h2 class="tw-text-3xl big_mobile:tw-text-6xl tablet:tw-text-6xl tw-antialiased tw-font-semibold tw-leading-none tw-tracking-[-2px] tw-capitalize blue_bor1der tw-drop-shadow-lg  tw-text-white">Styling Tips</h2>
-                        </div>
-                    </li>
-                    <li  class="mySlides tw-h-144"><img class="tw-object-cover tw-w-full" src="assets/logo/Rectangle.png" alt="">
-                        <div class="tw-absolute tw-inset-0 tw-transition-opacity tw-bg-slate-700/50"></div>
-                        <div class="tw-absolute tw-top-0 tw-left-0 tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full">
-                        <h2 class="tw-text-3xl big_mobile:tw-text-6xl tablet:tw-text-6xl tw-antialiased tw-font-semibold tw-leading-none tw-tracking-[-2px] tw-capitalize blue_bor1der tw-drop-shadow-lg  tw-text-white">Highlights</h2>
-                        </div>
-                    </li>
-                </ul>
-                <!-- arrows -->
-            <div class="tw-absolute tw-top-0 tw-flex tw-justify-around tw-w-full tw-h-full tw-p-4 tw-text-3xl tw-text-white tw-transition tw-ease-out tw-gap-96 tw-justify-items-center tw-duration-400">
-                <button class="prev" onclick="plusSlides(-1)">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="tw-w-20 tw-h-28 hover:tw-scale-110 smooth_transition">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                      </svg>              
-                </button>
-        
-                <button class="next" onclick="plusSlides(1)">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="tw-w-20 tw-h-28 hover:tw-scale-110 smooth_transition">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                      </svg>                             
-                </button>
-            </div>
-            </div>
-        
-        </div>    
-        
-            <div class="tw-relative tw-flex tw-items-center tw-justify-center tw-h-12 tw-m-8 tw-my-10 tw-bg-white tw-w-laptop_1280px ">
-                <ul class="tw-flex tw-flex-row tw-gap-28">
-                    <li onclick="currentSlide(1)">
                         <div>
-                            <a href="blogs.html"><p class="tw-h-8 tw-text-lg tw-font-normal tw-tracking-widest tw-text-center tw-ease-in-out tw-cursor-pointer tw-duration-400 tablet:tw-text-lg active dot tw-w-44 tw-text-slate-600 hover:tw-underline col-center-start laptop:tw-w-full hover:tw-scale-110 smooth_transition hover:tw-font-semibold hover:tw-text-fc-600">All Categories</p></a>
+                            <p class="tw-w-144 tw-text-center tw-text-gray-600 tw-text-base tw-font-normal tw-font-['Outfit'] tw-tracking-widest">Floor Center brings beauty, sophistication, and quality to you. From a humble beginning in 1997, we have quickly expanded our distribution to the public. Since then, our primary focus is on delivering satisfaction and happiness to our customers.</p>
                         </div>
-                    </li>
-                    <li onclick="currentSlide(2)">
-                        <div>
-                            <a href="blogs-inspiration.html"><p class="tw-h-8 tw-text-lg tw-font-normal tw-tracking-widest tw-text-center tw-ease-in-out tw-cursor-pointer tw-duration-400 tablet:tw-text-lg active dot tw-w-44 tw-text-slate-600 hover:tw-underline col-center-start laptop:tw-w-full hover:tw-scale-110 smooth_transition hover:tw-font-semibold hover:tw-text-fc-600">Inspirations</p></a>
+                        <div class="tw-flex tw-items-center tw-justify-center tw-pt-3">
+                        <div class="tw-relative tw-flex tw-justify-center tw-w-32 tw-h-8 tw-bg-red-700 tw-rounded-full ">
+                            <button class="tw-text-center tw-text-white tw-text-xs tw-font-normal tw-font-['Outfit'] tw-tracking-widest" onclick="window.location.href='#';">View Products</button>
                         </div>
-                    </li>
-                    <li onclick="currentSlide(3)">
-                        <div>
-                            <a href="blogs-tile-guides.html"><p class="tw-h-8 tw-text-lg tw-font-normal tw-tracking-widest tw-text-center tw-ease-in-out tw-cursor-pointer tw-duration-400 tablet:tw-text-lg active dot tw-w-44 tw-text-slate-600 hover:tw-underline col-center-start laptop:tw-w-full hover:tw-scale-110 smooth_transition hover:tw-font-semibold hover:tw-text-fc-600">Tile Guides</p></a>
-                        </div>
-                    </li>
-                    <li onclick="currentSlide(4)">
-                        <div>
-                            <a href="blogs-styling-tips.html"><p class="tw-h-8 tw-text-lg tw-font-normal tw-tracking-widest tw-text-center tw-ease-in-out tw-cursor-pointer tw-duration-400 tablet:tw-text-lg active dot tw-w-44 tw-text-slate-600 hover:tw-underline col-center-start laptop:tw-w-full hover:tw-scale-110 smooth_transition hover:tw-font-semibold hover:tw-text-fc-600">Styling Tips</p></a>
-                        </div>
-                    </li>
-                    <li onclick="currentSlide(5)">
-                        <div>
-                            <a href="blogs-highlights.html"><p class="tw-h-8 tw-text-lg tw-font-normal tw-tracking-widest tw-text-center tw-ease-in-out tw-cursor-pointer tw-duration-400 tablet:tw-text-lg active dot tw-w-44 tw-text-slate-600 hover:tw-underline col-center-start laptop:tw-w-full hover:tw-scale-110 smooth_transition hover:tw-font-semibold hover:tw-text-fc-600">Highlights</p></a>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                    </div>
+                </div>
+
             </div> 
+        </div>      -->
+        <div class="tw-h-16"></div>
+        <div class="tw-flex tw-items-center tw-justify-center tw-shadow-lg tw-w-fit ">
             
-        
-            <!-- <div class="tw-relative tw-flex tw-items-center tw-justify-center tw-w-full tw-bg-gray-100 tw-h-80">
-                    
-                <div class="tw-relative tw-flex tw-flex-col ">
-                    <div class>
-                        <p class="tw-text-4xl tw-font-medium tw-tracking-widest tw-text-center tw-text-gray-600 tw-font-outfit">Welcome To Floor Center</p>
-                    </div>
-                    <div>
-                        <p class="tw-text-base tw-font-normal tw-tracking-widest tw-text-center tw-text-gray-600 tw-w-144 tw-font-outfit">Floor Center brings beauty, sophistication, and quality to you. From a humble beginning in 1997, we have quickly expanded our distribution to the public. Since then, our primary focus is on delivering satisfaction and happiness to our customers.</p>
-                    </div>
-                    <div class="tw-flex tw-items-center tw-justify-center tw-pt-3">
-                    <div class="tw-relative tw-flex tw-justify-center tw-w-32 tw-h-8 tw-bg-red-700 tw-rounded-full ">
-                        <button class="tw-text-xs tw-font-normal tw-tracking-widest tw-text-center tw-text-white tw-font-outfit" onclick="window.location.href='#';">View Products</button>
-                    </div>
-                </div>
-                </div>
-            </div> -->
-        
-            <!-- <button class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-group">
-                <p class="tw-absolute tw-z-10 tw-p-4 tw-drop-shadow-xl">Gr3333out</p>
-                <div class="tw-w-full tw-h-32 tw-transition-transform tw-duration-200 tw-ease-in-out tablet:tw-h-80 pink_border1 hover:tw-scale-110"
-                style="background: url('assets/img/grout/grout2.png') center/cover no-repeat;">
-                    <div class="tw-w-full tw-p-4 tw-transition-opacity tw-duration-200 tw-ease-in-out tw-h-80 col-start-start tw-bg-gray-900/60 hover:tw-bg-slate-900/40">
-                    </div>
+            <div class="tw-relative tw-flex tw-items-center tw-justify-center tw-w-full tw-p-4 tw-bg-white tw-shadow-lg tw-h-96">
                 
-                </div>
-            </button> -->
-                <div class="tw-h-10"></div>
-                <div class="tw-relative tw-flex tw-justify-center tw-pt-12 tw-pb-4 tw-bg-white laptop:tw-w-laptop_1280px tw-h-fit">
-                    <div class="tw-w-full tw-px-24">
-                    <div>
-                        <h4 class="tw-flex tw-justify-center tw-text-5xl tw-font-medium text-center tablet:tw-text-5xl laptop:tw-text-5xl tw-text-slate-600 tw-font-outfit">All Categories</h4>
-                    
-        
-                                        <div class="tw-w-full tw-h-full tw-bg-white">
-                                            <div class="tw-flex tw-flex-row tw-justify-center tw-gap-8 tw-pt-8 tw-pb-16">
-                                                <a href="blogs-content.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog_features1.jpg" alt="">             
-                                                            </div>
-    
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            How To Pick The Right Tiles For Your Home
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Do you dream of a luxurious, spa-like oasis in your own home? Look no further than FC Sanitary Ware for all your bathroom design needs. Your bathroom is one of <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">June 30, 2023</p>
-                                                    </div>
-
-                                                    
-
-                                                </div>
-                                                    
-                                                </a>
-
-
-                                                <a href="blogs-content2.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            How To Pick The Right Tiles For Your Home
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Using tiles can transform your home into aesthetics and functionality. Choosing the proper tiles may alter your space’s appearance and feel, whether you’re renovating, building a new home, or upgrading <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">June 30, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog2_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-
-        
-                                                <a href="blogs-content3.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog3_features1.jpg" alt="">             
-                                                            </div>
-    
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            Designing Your Dream Bathroom with FC Sanitary Ware
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Do you dream of a luxurious, spa-like oasis in your own home? Look no further than FC Sanitary Ware for all your bathroom design needs <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">May 3, 2023</p>
-                                                    </div>
-
-                                                    
-
-                                                </div>
-                                                    
-                                                </a>
-
-                                            </div>
-
-                                            
-        
-                                             <div class="tw-flex tw-flex-row tw-justify-center tw-gap-8 tw-pb-16">
-                                                <a href="blogs-content4.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            4 Ways On How Your Bathroom Will Create a Spa-Like experience
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Make Your Bathroom a Relaxing Spa Oasis: 4 Easy Ways to Create a Calm and Peaceful Atmosphere Want to know the ways on how your tiles will create a spa-like <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">April 29, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog4_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                                
-                                                <a href="blogs-content5.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog5_features1.jpg" alt="">             
-                                                            </div>
-    
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            The Durability And Versatility Of Porcelain Tile
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            The Durability and Versatility of Porcelain Tile: A Flooring Solution for Any Room Porcelain tile is an excellent choice for flooring in any room of your home. Its durability and <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">April 6, 2023</p>
-                                                    </div>
-
-                                                    
-
-                                                </div>
-                                                    
-                                                </a>
-
-            
-                                                <a href="blogs-content2.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            How To Pick The Right Tiles For Your Home
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Using tiles can transform your home into aesthetics and functionality. Choosing the proper tiles may alter your space’s appearance and feel, whether you’re renovating, building a new home, or upgrading <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">June 30, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog2_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                            </div>
-
-                                            <div class="tw-flex tw-flex-row tw-justify-center tw-gap-8 tw-pb-16">
-                                                <a href="blogs-content4.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            4 Ways On How Your Bathroom Will Create a Spa-Like experience
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Make Your Bathroom a Relaxing Spa Oasis: 4 Easy Ways to Create a Calm and Peaceful Atmosphere Want to know the ways on how your tiles will create a spa-like <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">April 29, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog4_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                                
-                                                <a href="blogs-content5.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog5_features1.jpg" alt="">             
-                                                            </div>
-    
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            The Durability And Versatility Of Porcelain Tile
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            The Durability and Versatility of Porcelain Tile: A Flooring Solution for Any Room Porcelain tile is an excellent choice for flooring in any room of your home. Its durability and <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">April 6, 2023</p>
-                                                    </div>
-
-                                                    
-
-                                                </div>
-                                                    
-                                                </a>
-
-            
-                                                <a href="blogs-content2.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            How To Pick The Right Tiles For Your Home
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Using tiles can transform your home into aesthetics and functionality. Choosing the proper tiles may alter your space’s appearance and feel, whether you’re renovating, building a new home, or upgrading <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">June 30, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog2_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                            </div>
-
-                                            <div class="tw-flex tw-flex-row tw-justify-center tw-gap-8 tw-pb-16">
-                                                <a href="blogs-content4.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            4 Ways On How Your Bathroom Will Create a Spa-Like experience
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Make Your Bathroom a Relaxing Spa Oasis: 4 Easy Ways to Create a Calm and Peaceful Atmosphere Want to know the ways on how your tiles will create a spa-like <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">April 29, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog4_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                                
-                                                <a href="blogs-content5.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog5_features1.jpg" alt="">             
-                                                            </div>
-    
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            The Durability And Versatility Of Porcelain Tile
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            The Durability and Versatility of Porcelain Tile: A Flooring Solution for Any Room Porcelain tile is an excellent choice for flooring in any room of your home. Its durability and <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">April 6, 2023</p>
-                                                    </div>
-
-                                                    
-
-                                                </div>
-                                                    
-                                                </a>
-
-            
-                                                <a href="blogs-content2.html" class="tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-md ">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-p-4 tw-pt-6 tw-text-center tw-rounded-lg tw-bg-gradient-to-t tw-from-slate-100 tw-to-slate-100"> 
-                                                        
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            How To Pick The Right Tiles For Your Home
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Using tiles can transform your home into aesthetics and functionality. Choosing the proper tiles may alter your space’s appearance and feel, whether you’re renovating, building a new home, or upgrading <span class="tw-text-fc-700">…</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="tw-flex tw-justify-end tw-m-4">
-                                                    <p class="tw-text-gray-600 tw-text-xs tw-font-light tw-font-['Outfit'] tw-leading-snug">June 30, 2023</p>
-                                                    </div>
-
-                                                    <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
-    
-                                                        <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                        <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-0 group-hover:tw-scale-125" src="assets/logo/blog2_features1.jpg" alt="">             
-                                                        </div>
-
-                                                        <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                        
-                                                        <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                               
-                                                        </div>                                                                                                                                                                                                                      
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                            </div>
-
-                                            
-        
-                                            <!-- <div class="tw-flex tw-flex-row tw-gap-8 tw-pb-8">
-                                                <a href="blogs-content.html">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-text-center"> 
-                                                        
-                                                    
-                                                        
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-xl hover:tw-shadow-black/30">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-3 group-hover:tw-scale-125" src="assets/logo/blog_features1.jpg" alt="">             
-                                                            </div>
-
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-                                                
-                                                    
-                                                
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            5 Mistakes To Avoid During Tile Installation
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Do you dream of a luxurious, spa-like oasis in your own home? Look no further than FC Sanitary Ware for all your bathroom design needs. Your bathroom is one of …
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-    
-                
-                                                <a href="blogs-content.html">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-text-center"> 
-                                                        
-                                                    
-                                                        
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-xl hover:tw-shadow-black/30">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-3 group-hover:tw-scale-125" src="assets/logo/blog_features1.jpg" alt="">             
-                                                            </div>
-
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-                                                
-                                                    
-                                                
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            5 Mistakes To Avoid During Tile Installation
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Do you dream of a luxurious, spa-like oasis in your own home? Look no further than FC Sanitary Ware for all your bathroom design needs. Your bathroom is one of …
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-
-                                                <a href="blogs-content.html">  
-                                                    <div class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-text-center"> 
-                                                        
-                                                    
-                                                        
-                                                        <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-rounded-lg tw-cursor-pointer tw-group hover:tw-shadow-xl hover:tw-shadow-black/30">
-    
-                                                            <div class="tw-h-64 tw-rounded-lg tw-shadow-md tablet:tw-h-64 pink_border1 tw-w-88">
-                                                            <img class="tw-object-cover tw-w-full tw-h-full tw-transition-transform tw-duration-500 group-hover:tw-rotate-3 group-hover:tw-scale-125" src="assets/logo/blog_features1.jpg" alt="">             
-                                                            </div>
-
-                                                            <div class="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent group-hover:tw-via-white/60 "></div>
-                                                            
-                                                            <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-transition-all tw-duration-500 tw-translate-y-60% tw-px-9 group-hover:tw-translate-y-0">
-                                                                    <button class="tw-rounded-full tw-text-slate-700 tw-transition-colors tw-bg-white tw-ease-in-out hover:tw-bg-fc-700 hover:tw-text-white hover:tw-shadow-lg tw-py-2 tw-px-3.5 tw-font-outfit tw-text-sm tw-capitalize">Read More</button>
-                                                                   
-                                                            </div>                                                                                                                                                                                                                      
-                                                        </div>
-                                                
-                                                    
-                                                
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-xl tw-font-semibold tw-leading-tight tw-text-gray-600 tw-capitalize big_mobile:tw-text-xl tablet:tw-text-xl blue_bor1der tw-drop-shadow-xl tw-font-outfit">   
-                                                            5 Mistakes To Avoid During Tile Installation
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="tw-flex tw-justify-center">
-                                                        <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600 tw-cursor-pointer">
-                                                            Do you dream of a luxurious, spa-like oasis in your own home? Look no further than FC Sanitary Ware for all your bathroom design needs. Your bathroom is one of …
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                                    
-                                                </a>
-                                                    </div> -->
-        
-                                        
-        
+            <div class="jumbotron">
+                <div class="tw-flex tw-items-center tw-justify-center tw-h-28 container-fluid w-w-full">
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                        <div class="tw-relative"> 
+                            <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600">Find The Distance Between Two Places</p>
+                        </div>
+
+                        <div class="tw-relative"> 
+                            <p class="tw-w-full tw-text-sm tw-font-normal tw-leading-tight tw-text-gray-600">This App Will Help You Calculate Your Travelling Distance</p>
+                        </div>
+                        
+                        
+
+                            <form class=" form-horizontal">
+                                
+                                <div class="tw-flex tw-flex-row tw-items-center tw-w-full tw-h-full form-group">
+                                    <div for="to" class="tw-columns-2xs control label">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="tw-w-6 tw-h-6 tw-stroke-current tw-text-fc-700">
+                                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 01-1.313-1.313V9.564z" clip-rule="evenodd" />
+                                          </svg>
                                         </div>
-                                        
-                                        <!-- <nav aria-label="Page navigation example" class="tw-flex tw-items-center tw-justify-center tw-p-8">
-                                            <ul class="tw-flex tw-items-center tw-justify-center list-style-none">
-                                              <li onclick="currentSlide(1)">
-                                                <a
-                                                  class="active dot tw-relative tw-block tw-rounded tw-bg-transparent tw-font-outfit tw-px-3 tw-py-1.5 tw-text-sm tw-text-neutral-600 tw-transition-all tw-duration-300 tw-hover:bg-neutral-100 tw-dark:text-white tw-dark:hover:bg-neutral-700 tw-dark:hover:text-white"
-                                                  href="#"
-                                                  >Previous</a
-                                                >
-                                              </li>
-                                              <li onclick="currentSlide(2)">
-                                                <a
-                                                  class="tw-active tw-dot tw-relative tw-block tw-rounded tw-bg-transparent tw-font-outfit tw-px-3 tw-py-1.5 tw-text-sm tw-text-neutral-600 tw-transition-all tw-duration-300 tw-hover:bg-neutral-100 tw-dark:text-white tw-dark:hover:bg-neutral-700 tw-dark:hover:text-white"
-                                                  href="#"
-                                                  >1</a
-                                                >
-                                              </li>
-                                              <li onclick="currentSlide(3)" aria-current="page">
-                                                <a
-                                                  class="active dot tw-relative tw-block tw-rounded tw-bg-transparent tw-font-outfit tw-px-3 tw-py-1.5 tw-text-sm tw-text-neutral-600 tw-transition-all tw-duration-300 tw-hover:bg-neutral-100 tw-dark:text-white tw-dark:hover:bg-neutral-700 tw-dark:hover:text-white"
-                                                  href="#"
-                                                  >2</a
-                                                >
-                                              </li>
-                                              <li onclick="currentSlide(4)">
-                                                <a
-                                                  class="active dot tw-relative tw-block tw-rounded tw-bg-transparent tw-font-outfit tw-px-3 tw-py-1.5 tw-text-sm tw-text-neutral-600 tw-transition-all tw-duration-300 tw-hover:bg-neutral-100 tw-dark:text-white tw-dark:hover:bg-neutral-700 tw-dark:hover:text-white"
-                                                  href="#"
-                                                  >3</a
-                                                >
-                                              </li>
-                                              <li onclick="currentSlide(5)">
-                                                <a
-                                                  class="active dot tw-relative tw-block tw-rounded tw-bg-transparent tw-font-outfit tw-px-3 tw-py-1.5 tw-text-sm tw-text-neutral-600 tw-transition-all tw-duration-300 tw-hover:bg-neutral-100 tw-dark:text-white tw-dark:hover:bg-neutral-700 tw-dark:hover:text-white"
-                                                  href="#"
-                                                  >Next</a
-                                                >
-                                              </li>
-                                            </ul>
-                                          </nav> -->
-                                        
-                    </div> 
-                    
-                    
-                                            <!-- <div class="tw-flex tw-flex-col tw-pt-16 tw-pl-8">
-                                                        <div class="tw-flex tw-items-center tw-justify-end tw-pt-4">
-                                                            
-                                                                        <div class="tw-relative tw-bg-white tw-w-96 tw-h-80">
-                                                                            <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                <img class="tw-object-cover tw-shadow tw-w-96 tw-h-80" src="assets/logo/1tile_survey.jpg" alt="">
-                                                                                <div class="tw-absolute tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-2 tw-bg-white tw-w-80 tw-h-72">
-                                                                                    <div class="tw-flex tw-items-center tw-h-8 tw-shadow tw-w-72 tw-text-slate-500 tw-drop-shadow-lg"><input type="text" id="text" class="tw-h-8 tw-pl-2 tw-text-base tw-font-normal tw-leading-tight tw-text-gray-600 tw-w-80 tw-font-outfit" placeholder="Name:" required></div>
-                                                                                    <div class="tw-flex tw-items-center tw-h-8 tw-shadow tw-w-72 tw-text-slate-500 tw-drop-shadow-lg"><input type="email" id="email" class="tw-h-8 tw-pl-2 tw-text-base tw-font-normal tw-leading-tight tw-text-gray-600 tw-w-80 tw-font-outfit" placeholder="Email Address:" required></div>
-                                                                                    <span class=""></span>
-                                                                                    <div class="tw-flex tw-h-24 tw-shadow tw-w-72 tw-text-slate-500 tw-drop-shadow-lg"><textarea rows="4" id="address" class="tw-h-24 tw-pl-2 tw-text-base tw-font-normal tw-leading-tight tw-text-gray-600 tw-align-text-top tw-border-gray-500 tw-w-80 tw-font-outfit"  placeholder="Address:" required></textarea></div>  
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        
-                                                                        
-                                                         </div>                                                         
-                                                   
-        
-                                                   
-                                                        <div class="tw-flex tw-items-center tw-justify-end">
-                                                            
-                                                                        <div class="tw-relative tw-h-24 tw-bg-white tw-shadow tw-w-96">
-                                                                            <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                <img class="tw-h-24 tw-w-96" src="assets/logo/Frame2.png" alt="">
-                                                                                <div class="tw-absolute tw-flex tw-items-center tw-justify-center tw-w-32 tw-h-8 tw-bg-red-700 tw-rounded-full">
-                                                                                    <div class="tw-text-base tw-font-normal tw-tracking-widest tw-text-center tw-text-white tw-cursor-pointer tw-font-outfit "  onclick="window.location.href='#';">SEND</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>     
-                                                         </div>
-                                                       <span class="tw-p-4"></span>
-                                                         
-                                                   
-                                                         <div class="tw-relative tw-flex tw-items-center tw-justify-start tw-h-10 tw-pl-4 tw-bg-white tw-shadow tw-w-96">
-                                                            <p class="tw-relative tw-text-lg tw-font-medium tw-leading-tight tw-text-center tw-text-gray-600 tw-font-outfit">LATEST BLOGS</p>
-                                                        </div>
-                                                       
-                                                         <div class="tw-flex tw-items-center tw-justify-end">
-                                                           
-                                                                        <div class="tw-relative tw-bg-white tw-shadow tw-w-96 tw-h-128">
-                                                                            <div class="tw-flex tw-items-center tw-justify-center ">
-                                                                                
-                                                                                <div class="tw-flex tw-flex-row tw-gap-2 tw-pt-4 ">
-                                                                                    <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                       
-                                                                                                    <div class="tw-relative tw-bg-white tw-w-34 tw-h-52">
-                                                                                                        <div class="tw-flex tw-items-center tw-justify-start">
-                                                                                                            <img class="tw-h-20 tw-rounded-lg tw-cursor-pointer tw-w-34" src="assets/logo/10452_rectangle.svg" alt=""  onclick="window.location.href='#';">
-                                                                                                        </div>
-                                                                                                        
-                                                                                                    
-                                                                                                        
-                                                                                                    <div class="tw-flex tw-items-center tw-justify-start tw-pt-3 tw-w-36 tw-h-54">
-                                                                                                        <p class="tw-text-base tw-font-medium tw-leading-snug tw-cursor-pointer tw-w-44 tw-text-slate-600 tw-font-outfit"  onclick="window.location.href='#';">5 Design Tips for Small Spaces</p>
-                                                                                                    </div>
-                                                                                                    <div class="tw-flex tw-justify-start tw-pt-3">
-                                                                                                        <div class="tw-relative tw-flex tw-items-center tw-justify-start tw-h-8 tw-w-44 tw-bg-gray-50">
-                                                                                                            <p class="tw-text-xs tw-font-light tw-leading-snug tw-text-slate-500 tw-font-outfit">November 11, 2023</p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    </div>
-                                                                                                    
-                                                                                    </div>
-        
-        
-                                                                                    <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                       
-                                                                                                    <div class="tw-relative tw-bg-white tw-w-34 tw-h-52">
-                                                                                                        <div class="tw-flex tw-items-center tw-justify-start">
-                                                                                                            <img class="tw-h-20 tw-rounded-lg tw-cursor-pointer tw-w-34" src="assets/logo/10452_rectangle.svg" alt=""  onclick="window.location.href='#';">
-                                                                                                        </div>
-                                                                                                        
-                                                                                                    
-                                                                                                        
-                                                                                                    <div class="tw-flex tw-items-center tw-justify-start tw-pt-3 tw-w-36 tw-h-54">
-                                                                                                        <p class="tw-text-base tw-font-medium tw-leading-snug tw-cursor-pointer tw-w-44 tw-text-slate-600 tw-font-outfit"  onclick="window.location.href='#';">5 Design Tips for Small Spaces</p>
-                                                                                                    </div>
-                                                                                                    <div class="tw-flex tw-justify-start tw-pt-3">
-                                                                                                        <div class="tw-relative tw-flex tw-items-center tw-justify-start tw-h-8 tw-w-44 tw-bg-gray-50">
-                                                                                                            <p class="tw-text-xs tw-font-light tw-leading-snug tw-text-slate-500 tw-font-outfit">November 11, 2023</p>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    </div>
-                                                                                                    
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>
-        
-                                                                                <div class="tw-flex tw-items-center tw-justify-center ">
-                                                                                
-                                                                                    <div class="tw-flex tw-flex-row tw-gap-2 ">
-                                                                                        <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                           
-                                                                                                        <div class="tw-relative tw-bg-white tw-w-34 tw-h-52">
-                                                                                                            <div class="tw-flex tw-items-center tw-justify-start">
-                                                                                                                <img class="tw-h-20 tw-rounded-lg tw-cursor-pointer tw-w-34" src="assets/logo/10452_rectangle.svg" alt=""  onclick="window.location.href='#';">
-                                                                                                            </div>
-                                                                                                            
-                                                                                                        
-                                                                                                            
-                                                                                                        <div class="tw-flex tw-items-center tw-justify-start tw-pt-3 tw-w-36 tw-h-54">
-                                                                                                            <p class="tw-text-base tw-font-medium tw-leading-snug tw-cursor-pointer tw-w-44 tw-text-slate-600 tw-font-outfit"  onclick="window.location.href='#';">5 Design Tips for Small Spaces</p>
-                                                                                                        </div>
-                                                                                                        <div class="tw-flex tw-justify-start tw-pt-3">
-                                                                                                            <div class="tw-relative tw-flex tw-items-center tw-justify-start tw-h-8 tw-w-44 tw-bg-gray-50">
-                                                                                                                <p class="tw-text-xs tw-font-light tw-leading-snug tw-text-slate-500 tw-font-outfit">November 11, 2023</p>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        </div>
-                                                                                                        
-                                                                                        </div>
-            
-            
-                                                                                        <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                          
-                                                                                                        <div class="tw-relative tw-bg-white tw-w-34 tw-h-52">
-                                                                                                            <div class="tw-flex tw-items-center tw-justify-start">
-                                                                                                                <img class="tw-h-20 tw-rounded-lg tw-cursor-pointer tw-w-34" src="assets/logo/10452_rectangle.svg" alt=""  onclick="window.location.href='#';">
-                                                                                                            </div>
-                                                                                                            
-                                                                                                        
-                                                                                                            
-                                                                                                        <div class="tw-flex tw-items-center tw-justify-start tw-pt-3 tw-w-36 tw-h-54">
-                                                                                                            <p class="tw-text-base tw-font-medium tw-leading-snug tw-cursor-pointer tw-w-44 tw-text-slate-600 tw-font-outfit"  onclick="window.location.href='#';">5 Design Tips for Small Spaces</p>
-                                                                                                        </div>
-                                                                                                        <div class="tw-flex tw-justify-start tw-pt-3">
-                                                                                                            <div class="tw-relative tw-flex tw-items-center tw-justify-start tw-h-8 tw-w-44 tw-bg-gray-50">
-                                                                                                                <p class="tw-text-xs tw-font-light tw-leading-snug tw-text-slate-500 tw-font-outfit">November 11, 2023</p>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        </div>
-                                                                                                        
-                                                                                        </div>
-    
-                                                                                        
-                                                                                    </div>
-                                                                                    
-                                                                                    </div>
-                                                                                    <div class="tw-flex tw-items-center tw-justify-center">
-                                                                                        <div class="tw-relative tw-flex tw-justify-center tw-w-32 tw-h-8 tw-bg-red-700 tw-rounded-full ">
-                                                                                            <button class="tw-text-xs tw-font-normal tw-tracking-widest tw-text-center tw-text-white tw-font-outfit" onclick="window.location.href='#';">VIEW MORE</button>
-                                                                                        </div>
-                                                                                    </div>
-                                                
-                                                                            </div>
-        
-        
-                                                                            
-                                                                        </div>
-                                                                        
-                                                                        
-                                            </div>     -->
-                                                
-        
-        
-                                                    
-                                                    
-                                                 
-        
-        
+                                    
+                                      
+                                    <div class="tw-columns-4">
+                                            <input type="text" id="from" placeholder="Origin" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="tw-flex tw-flex-row tw-items-center tw-w-full tw-h-full form-group ">
+                                    <label for="to" class="tw-columns-2xs control label">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="tw-w-6 tw-h-6 tw-stroke-current tw-text-fc-700">
+                                            <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                          </svg>
+                                          
+                                    </label>
+                                    
+                                      
+                                    <div class="tw-columns-4xs">
+                                            <input type="text" id="to" placeholder="Destination" class="form-control">
+                                    </div>
+                                </div>
+                                
+                            </form>
+                            <div class=" tw-columns-2xs">
+                                <button class="btn btn-info"><img class="tw-w-6 tw-h-6" src="assets/logo/get-directions-button.png" alt="">
+                                  </button>
+
+                            </div>
                     </div>
-        
-                  
                 </div>
-        
-        
-        
                 
+                </div>
+            </div>
         
-                
-                
-        
-        
-        
+        </div>
+
+        <div class="tw-flex tw-items-center tw-justify-center tw-shadow-lg tw-w-fit ">
             
+            <div class="tw-relative tw-flex tw-items-center tw-justify-center tw-p-4 tw-bg-white tw-shadow-lg tw-w-80 tw-h-96">
+
+                    <div class="tw-flex tw-w-full tw-h-full container-fluid">
+                        <div id="googleMap" class="tw-w-80 tw-h-96" >
+                        </div>
+                        <div id="output">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZUozkkoH03pRvdhB0QbA8U0jAhfNhHGg&libraries=places"></script>
+
+        <script>
+            var myLatLng = { lat: 38.3460, lng: -0.4907};
+            var mapOptions = {
+                center: myLatLng,
+                zoom: 7,
+                maptypeId: goole.maps.MaptypeId.ROADMAP
+            };
+
+            //CREATE THE map
+
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions)
+        </script>
+
+       
+
+
         
-        
-        
-                <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-                    
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-                    
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
-                    }
-                    
-                    function showSlides(n) {
-                      let i;
-                      let slides = document.getElementsByClassName("mySlides");
-                      let dots = document.getElementsByClassName("dot");
-                      if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slideIndex = slides.length}
-                      for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                    }
-        
-        
-        
-                  
-                    </script>
-        
-              
        
 
             <!-- 
@@ -2160,7 +1320,7 @@
             .##.......##.....##.##.....##....##....##.......##....##......................................................................................................................
             .##........#######...#######.....##....########.##.....##.....................................................................................................................
             -->
-            <div class="tw-w-full tw-mt-0 tablet:tw-mt-4 tw-h-fit pink_border1 tw-bg-slate-50 row-center-center tw-font-outfit">
+            <div class="tw-w-full tw-mt-0 tw-h-fit tablet:tw-mt-4 pink_border1 tw-bg-slate-50 row-center-center tw-font-outfit">
                 <div class="tw-w-full tw-h-fit laptop:tw-w-laptop_1280px tw-bg-slate-100/0 col-start-center">
                     <div class="tw-grid tw-w-full tw-grid-flow-row tw-gap-4 tw-px-8 tw-py-0 tablet:tw-p-8 tablet:tw-grid-flow-col tablet:tw-grid-cols-12 square:tw-grid-cols-12 tw-h-fit">
                         
