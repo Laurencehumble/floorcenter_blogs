@@ -843,6 +843,10 @@ html {
   bottom: 0;
 }
 
+.tw-bottom-70vw{
+  bottom: 70vw;
+}
+
 .tw-left-0{
   left: 0;
 }
@@ -865,6 +869,66 @@ html {
 
 .tw-top-56{
   top: 224px;
+}
+
+.tw-bottom-65vw{
+  bottom: 65vw;
+}
+
+.tw-bottom-28{
+  bottom: 112px;
+}
+
+.tw-bottom-16{
+  bottom: 64px;
+}
+
+.tw-bottom-12{
+  bottom: 48px;
+}
+
+.-tw-bottom-0{
+  bottom: 0;
+}
+
+.tw-bottom-2{
+  bottom: 8px;
+}
+
+.tw-bottom-6{
+  bottom: 24px;
+}
+
+.tw-bottom-8{
+  bottom: 32px;
+}
+
+.tw-left-6{
+  left: 24px;
+}
+
+.tw-right-6{
+  right: 24px;
+}
+
+.tw-right-4{
+  right: 16px;
+}
+
+.tw-right-2{
+  right: 8px;
+}
+
+.tw-right-12{
+  right: 48px;
+}
+
+.tw-right-16{
+  right: 64px;
+}
+
+.tw-right-28{
+  right: 112px;
 }
 
 .tw-z-10{
@@ -965,6 +1029,10 @@ html {
   margin-bottom: 8px;
 }
 
+.tw-mb-28{
+  margin-bottom: 112px;
+}
+
 .tw-mb-3{
   margin-bottom: 12px;
 }
@@ -1021,10 +1089,6 @@ html {
   margin-top: 8px;
 }
 
-.tw-mt-28{
-  margin-top: 112px;
-}
-
 .tw-mt-3{
   margin-top: 12px;
 }
@@ -1043,38 +1107,6 @@ html {
 
 .tw-mt-8{
   margin-top: 32px;
-}
-
-.tw-mt-24{
-  margin-top: 96px;
-}
-
-.tw-mt-36{
-  margin-top: 144px;
-}
-
-.tw-mt-40{
-  margin-top: 160px;
-}
-
-.tw-mt-48{
-  margin-top: 192px;
-}
-
-.tw-mt-44{
-  margin-top: 176px;
-}
-
-.tw-mt-52{
-  margin-top: 208px;
-}
-
-.tw-mb-16{
-  margin-bottom: 64px;
-}
-
-.tw-mb-28{
-  margin-bottom: 112px;
 }
 
 .tw-block{
@@ -1139,10 +1171,6 @@ html {
 
 .tw-h-20{
   height: 80px;
-}
-
-.tw-h-208{
-  height: 832px;
 }
 
 .tw-h-24{
@@ -1216,10 +1244,6 @@ html {
 
 .tw-h-full{
   height: 100%;
-}
-
-.tw-h-224{
-  height: 896px;
 }
 
 .tw-w-10{
@@ -1361,6 +1385,11 @@ html {
 
 .tw-flex-grow{
   flex-grow: 1;
+}
+
+.tw-translate-x-100\%{
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .tw-translate-y-60{
@@ -1672,6 +1701,15 @@ html {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.tw-bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-900\/20{
+  background-color: rgb(17 24 39 / 0.2);
+}
+
 .tw-bg-gray-900\/60{
   background-color: rgb(17 24 39 / 0.6);
 }
@@ -1709,11 +1747,6 @@ html {
 
 .tw-bg-slate-200\/0{
   background-color: rgb(226 232 240 / 0);
-}
-
-.tw-bg-slate-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .tw-bg-slate-400\/0{
@@ -1799,6 +1832,15 @@ html {
 .tw-object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.tw-object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.tw-p-1{
+  padding: 4px;
 }
 
 .tw-p-2{
@@ -1956,10 +1998,6 @@ html {
 
 .tw-pt-8{
   padding-top: 32px;
-}
-
-.tw-pt-20{
-  padding-top: 80px;
 }
 
 .tw-text-center{
@@ -2482,6 +2520,10 @@ html {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.hover\:tw-bg-slate-900\/0:hover{
+  background-color: rgb(15 23 42 / 0);
+}
+
 .hover\:tw-bg-slate-900\/40:hover{
   background-color: rgb(15 23 42 / 0.4);
 }
@@ -2558,6 +2600,11 @@ html {
 
 .hover\:tw-ease-in-out:hover{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tw-group:hover .group-hover\:tw-translate-x-0{
+  --tw-translate-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .tw-group:hover .group-hover\:tw-translate-y-0{
@@ -2684,6 +2731,10 @@ html {
     height: 48px;
   }
 
+  .tablet\:tw-h-144{
+    height: 576px;
+  }
+
   .tablet\:tw-h-64{
     height: 256px;
   }
@@ -2699,6 +2750,26 @@ html {
   .tablet\:tw-h-fit{
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .tablet\:tw-h-full{
+    height: 100%;
+  }
+
+  .tablet\:tw-h-128{
+    height: 512px;
+  }
+
+  .tablet\:tw-h-192{
+    height: 768px;
+  }
+
+  .tablet\:tw-h-176{
+    height: 704px;
+  }
+
+  .tablet\:tw-h-160{
+    height: 640px;
   }
 
   .tablet\:tw-w-40{

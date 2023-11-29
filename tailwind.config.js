@@ -87,6 +87,7 @@ module.exports = {
         '40vw': '40vw',
         '50vw': '50vw',
         '60vw': '60vw',
+        '65vw': '65vw',
         '70vw': '70vw',
         '80vw': '80vw',
         '90vw': '90vw',
