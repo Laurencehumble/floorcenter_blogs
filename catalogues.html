@@ -1192,7 +1192,8 @@
 
                                             <div class="tw-absolute tw-flex tw-flex-row tw-items-center tw-justify-center tw-right-28 tw-bottom-12 row-center-center">
                                                 
-                                                <a href="catalogues.html" class="tw-flex tw-justify-center">  
+                                                <button onclick="showDialog()"  class="tw-flex tw-justify-center">  
+                                                    
                                                     <div class="tw-flex tw-flex-col tw-justify-center tw-p-4 tw-pt-6 tw-text-center "> 
                                                         
  
@@ -1211,11 +1212,11 @@
                                                                 </div>                                                                                                                                                                                                                  
                                                         </div>
                                                 </div>
-                                                    
-                                                </a>
+                                               
+                                                </button>
+                                                
 
-
-                                                <a href="catalogues.html" class="">  
+                                                <button onclick="showDialog2()"  class="tw-flex tw-justify-center"> 
                                                     <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center "> 
  
                                                         <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
@@ -1234,10 +1235,10 @@
                                                         </div>
                                                 </div>
                                                     
-                                                </a>
+                                                </button>
 
         
-                                                <a href="catalogues.html" class="">  
+                                                <button onclick="showDialog3()"  class="tw-flex tw-justify-center">  
                                                     <div class="tw-flex tw-flex-col tw-justify-center tw-w-full tw-h-full tw-gap-4 tw-p-4 tw-pt-6 tw-text-center "> 
  
                                                         <div class="tw-relative tw-items-center tw-justify-center tw-w-full tw-overflow-hidden tw-transition-shadow tw-cursor-pointer tw-group hover:tw-shadow-md ">
@@ -1256,7 +1257,50 @@
                                                         </div>
                                                 </div>
                                                     
-                                                </a>
+                                                </button>
+                                                <!-- catalogues modal pop up 1 -->
+                                                <div onclick="hideDialog()" id="dialog" class="tw-fixed tw-top-0 tw-left-0 tw-items-center tw-justify-center tw-hidden tw-w-screen tw-h-screen tw-transition-opacity tw-duration-500 tw-bg-black tw-bg-opacity-50 tw-opacity-0">
+
+                                                    <div onclick="event.stopImmediatePropagation()" class=" tw-bg-white tw-rounded tw-shadow-md tw-h-80% tw-w-50% tw-flex  tw-gap-5 tw-flex-col tw-overflow-hidden">
+                                
+                                                        <div class="tw-flex tw-justify-center tw-gap-6 tw-p-8 pb-0">
+                                                            <h1 class="">POP UP MODAL 1</h1>
+                                                           
+                                                        </div>
+                                
+                                                        
+                                                       
+                                                    </div>
+                                            </div>
+                                            <!-- catalogues modal pop up 2 -->
+                                            <div onclick="hideDialog2()" id="dialog2" class="tw-fixed tw-top-0 tw-left-0 tw-items-center tw-justify-center tw-hidden tw-w-screen tw-h-screen tw-transition-opacity tw-duration-500 tw-bg-black tw-bg-opacity-50 tw-opacity-0">
+
+                                                <div onclick="event.stopImmediatePropagation()" class=" tw-bg-white tw-rounded tw-shadow-md tw-h-80% tw-w-50% tw-flex  tw-gap-5 tw-flex-col tw-overflow-hidden">
+                            
+                                                    <div class="tw-flex tw-justify-center tw-gap-6 tw-p-8 pb-0">
+                                                        <h1 class="">POP UP MODAL 2</h1>
+                                                        
+                                                    </div>
+                            
+                                                    
+                                                   
+                                                </div>
+                                        </div>
+
+                                         <!-- catalogues modal pop up 3 -->
+                                         <div onclick="hideDialog3()" id="dialog3" class="tw-fixed tw-top-0 tw-left-0 tw-items-center tw-justify-center tw-hidden tw-w-screen tw-h-screen tw-transition-opacity tw-duration-500 tw-bg-black tw-bg-opacity-50 tw-opacity-0">
+
+                                            <div onclick="event.stopImmediatePropagation()" class=" tw-bg-white tw-rounded tw-shadow-md tw-h-80% tw-w-50% tw-flex  tw-gap-5 tw-flex-col tw-overflow-hidden">
+                        
+                                                <div class="tw-flex tw-justify-center tw-gap-6 tw-p-8 pb-0">
+                                                    <h1 class="">POP UP MODAL 3</h1>
+                                                    
+                                                </div>
+                        
+                                                
+                                               
+                                            </div>
+                                    </div>
 
                                             </div>
  
@@ -1522,9 +1566,74 @@
                                 
                 </div>
         
+                <!-- modal catalogues 1 -->
         
-        
-                
+                <script>
+                    function showDialog() {
+                        let dialog = document.getElementById("dialog");
+                        dialog.classList.remove("tw-hidden");
+                        dialog.classList.add("tw-flex");
+                        setTimeout(() => {
+                            dialog.classList.add("tw-opacity-100");
+                        }, 20);   
+                    }
+    
+                    function hideDialog() {
+                        let dialog = document.getElementById("dialog");
+                        dialog.classList.add("tw-opacity-0");
+                        dialog.classList.remove("tw-opacity-100");
+                        setTimeout(() => {
+                        dialog.classList.add("tw-hidden");
+                        dialog.classList.remove("tw-flex");  
+                        }, 500);   
+                    }
+                </script>
+
+                 <!-- modal catalogues 2 -->
+
+                <script>
+                    function showDialog2() {
+                        let dialog2 = document.getElementById("dialog2");
+                        dialog2.classList.remove("tw-hidden");
+                        dialog2.classList.add("tw-flex");
+                        setTimeout(() => {
+                            dialog2.classList.add("tw-opacity-100");
+                        }, 20);   
+                    }
+
+                    function hideDialog2() {
+                        let dialog2 = document.getElementById("dialog2");
+                        dialog2.classList.add("tw-opacity-0");
+                        dialog2.classList.remove("tw-opacity-100");
+                        setTimeout(() => {
+                        dialog2.classList.add("tw-hidden");
+                        dialog2.classList.remove("tw-flex");  
+                        }, 500);   
+                    }
+                </script>
+
+                 <!-- modal catalogues 3 -->
+
+                 <script>
+                    function showDialog3() {
+                        let dialog3 = document.getElementById("dialog3");
+                        dialog3.classList.remove("tw-hidden");
+                        dialog3.classList.add("tw-flex");
+                        setTimeout(() => {
+                            dialog3.classList.add("tw-opacity-100");
+                        }, 20);   
+                    }
+
+                    function hideDialog3() {
+                        let dialog3 = document.getElementById("dialog3");
+                        dialog3.classList.add("tw-opacity-0");
+                        dialog3.classList.remove("tw-opacity-100");
+                        setTimeout(() => {
+                        dialog3.classList.add("tw-hidden");
+                        dialog3.classList.remove("tw-flex");  
+                        }, 500);   
+                    }
+                </script>
         
                 
                 

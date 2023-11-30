@@ -1190,6 +1190,22 @@ html {
   height: 100%;
 }
 
+.tw-h-screen{
+  height: 100vh;
+}
+
+.tw-h-50\%{
+  height: 50%;
+}
+
+.tw-h-100\%{
+  height: 100%;
+}
+
+.tw-h-80\%{
+  height: 80%;
+}
+
 .tw-w-10{
   width: 40px;
 }
@@ -1311,8 +1327,20 @@ html {
   width: 1280px;
 }
 
-.tw-w-desktop_1356px{
-  width: 1356px;
+.tw-w-screen{
+  width: 100vw;
+}
+
+.tw-w-30{
+  width: 120px;
+}
+
+.tw-w-30\%{
+  width: 30%;
+}
+
+.tw-w-50\%{
+  width: 50%;
 }
 
 .tw-min-w-\[160px\]{
@@ -1361,6 +1389,12 @@ html {
 .tw-touch-pan-x{
   --tw-pan-x: pan-x;
   touch-action: var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
+}
+
+.tw-select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .tw-list-none{
@@ -1487,6 +1521,10 @@ html {
 
 .tw-gap-96{
   gap: 384px;
+}
+
+.tw-gap-5{
+  gap: 20px;
 }
 
 .tw-gap-x-1{
@@ -1644,6 +1682,11 @@ html {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.tw-bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .tw-bg-gray-50{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1734,6 +1777,29 @@ html {
 .tw-bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.tw-bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.tw-bg-opacity-50{
+  --tw-bg-opacity: 0.5;
+}
+
+.tw-bg-opacity-0{
+  --tw-bg-opacity: 0;
 }
 
 .tw-bg-gradient-to-b{
@@ -1834,6 +1900,11 @@ html {
 .tw-px-4{
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.tw-px-5{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .tw-px-8{
@@ -2147,6 +2218,14 @@ html {
 
 .tw-opacity-50{
   opacity: 0.5;
+}
+
+.tw-opacity-0{
+  opacity: 0;
+}
+
+.tw-opacity-100{
+  opacity: 1;
 }
 
 .tw-shadow{
