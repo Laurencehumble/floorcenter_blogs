@@ -1113,6 +1113,10 @@ html {
   margin-top: 36px;
 }
 
+.tw-mt-20{
+  margin-top: 80px;
+}
+
 .tw-block{
   display: block;
 }
@@ -1268,6 +1272,15 @@ html {
 
 .tw-max-h-full{
   max-height: 100%;
+}
+
+.tw-max-h-screen{
+  max-height: 100vh;
+}
+
+.tw-max-h-max{
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 
 .tw-min-h-screen{
@@ -2079,6 +2092,18 @@ html {
 
 .tw-pt-8{
   padding-top: 32px;
+}
+
+.tw-pb-6{
+  padding-bottom: 24px;
+}
+
+.tw-pt-20{
+  padding-top: 80px;
+}
+
+.tw-pt-24{
+  padding-top: 96px;
 }
 
 .tw-text-center{
