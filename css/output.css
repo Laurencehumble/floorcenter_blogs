@@ -3122,6 +3122,10 @@ html {
     margin-bottom: 16px;
   }
 
+  .tablet\:tw-mr-16{
+    margin-right: 64px;
+  }
+
   .tablet\:tw-mt-0{
     margin-top: 0;
   }
