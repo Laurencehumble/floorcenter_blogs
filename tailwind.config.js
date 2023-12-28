@@ -50,6 +50,7 @@ module.exports = {
         'fc-100': '#F9D7D2',
         'fc-50': '#FFECE9',
         'Linear-opacity': '#0F172A',
+        'Linear-category': '#E2E8F0',
 
       },
       fontFamily: 

@@ -230,3 +230,77 @@
         font-family: Work Sans, sans-serif;
       }
     }
+
+   
+    .pagination{
+      text-align: center;
+      font-family: Outfit;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+     
+      user-select: none;
+    }
+
+    .pagination li{
+      display: inline-block;
+      margin: 5px;
+      
+    }
+    
+    .pagination a{
+      color: #637381;
+      text-decoration: none;
+      font-size: 1.2rem;
+      line-height: 45px;
+    }
+    
+    .previous-page, .next-page{
+      border-radius: 3px;
+      padding: 6.5px;
+      cursor: pointer;
+      
+    }
+    
+    .previous-page:hover{
+      background: #B91C1C;
+    }
+    
+    .previous-page a:hover{
+      color:#fff
+    }
+    
+    
+    .next-page:hover{
+      background: #B91C1C;
+    
+    }
+    
+    .next-page a:hover{
+      color: #fff;
+    
+    }
+    
+    .current-page, .dots{
+     border-radius: 3px;
+      width: 45px;
+      cursor: pointer;
+    }
+    
+    .active_pagination{
+      background: #B91C1C;
+    }
+    
+    .active_pagination a{
+      color: #fff;
+      width: 45px;
+    }
+    
+    .disable{
+      background: #ccc;
+    }
+

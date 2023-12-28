@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce Website</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Additional styles */
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-4">Product Listing</h1>
+
+    <!-- Product Grid -->
+    <div id="productGrid" class="grid grid-cols-4 gap-4">
+
+        <h1>eweqweq</h1>
+        <h1>eweqweq</h1>
+        <h1>eweqweq</h1>
+        <h1>eweqweq</h1>
+        <h1>eweqweq</h1>
+        <h1>eweqweq</h1>
+        <h1>eweqweq</h1>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center items-center mt-8">
+      <div id="pagination" class="flex space-x-2"></div>
+    </div>
+  </div>
+
+  <script>
+   // Simulated product data
+   function App() {
+    const [page, setPage] = useState(1);
+    const [limit, setLimit] = useState(5);
+    return ('pagination');
+    
+   }
+const getUser = function (page, limit) {
+  let array = [];
+  for (let i = (page - 1) * limit; i < (page * limit); i++) {
+        array.push(users[i]);
+  }
+  return array;
+}
+
+const getLength = function () {
+  return users.length;
+}
+
+// Constants
+const productsPerPage = 8; // Number of products per page
+
+// Function to display products based on page number
+function displayProducts(page) {
+  const productGrid = document.getElementById('productGrid');
+  productGrid.innerHTML = '';
+
+  const startIndex = (page - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+  const displayedProducts = products.slice(startIndex, endIndex);
+
+  displayedProducts.forEach(product => {
+    productGrid.innerHTML += `
+      <div class="border p-4 rounded-md bg-white">
+        <h3 class="font-bold">${product.name}</h3>
+        <!-- Other product details -->
+      </div>
+    `;
+  });
+}
+
+// Function to generate pagination dots and arrows
+function generatePagination(currentPage, totalPages) {
+  const pagination = document.getElementById('pagination');
+  pagination.innerHTML = '';
+
+  if (currentPage > 1) {
+    pagination.innerHTML += `<button id="prevBtn" class="px-3 py-1 rounded-md bg-blue-500 text-white">&#8592; Previous</button>`;
+  }
+
+  for (let i = 1; i <= totalPages; i++) {
+    if (i === currentPage) {
+      pagination.innerHTML += `<button class="px-3 py-1 rounded-md bg-blue-500 text-white">${i}</button>`;
+    } else if (
+      i === 1 ||
+      i === totalPages ||
+      (i >= currentPage - 1 && i <= currentPage + 1)
+    ) {
+      pagination.innerHTML += `<button class="px-3 py-1 rounded-md bg-gray-300">${i}</button>`;
+    } else if (i === currentPage - 2 || i === currentPage + 2) {
+      pagination.innerHTML += `<span class="px-3 py-1">...</span>`;
+    }
+  }
+
+  if (currentPage < totalPages) {
+    pagination.innerHTML += `<button id="nextBtn" class="px-3 py-1 rounded-md bg-blue-500 text-white">Next &#8594;</button>`;
+  }
+
+  // Event listeners for pagination buttons
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      const pageNumber = currentPage - 1;
+      displayProducts(pageNumber);
+      generatePagination(pageNumber, totalPages);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const pageNumber = currentPage + 1;
+      displayProducts(pageNumber);
+      generatePagination(pageNumber, totalPages);
+    });
+  }
+
+  pagination.querySelectorAll('button:not(#prevBtn):not(#nextBtn)').forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const pageNumber = index + 1;
+      displayProducts(pageNumber);
+      generatePagination(pageNumber, totalPages);
+    });
+  });
+}
+
+// Initial display
+const initialPage = 1;
+const totalPages = Math.ceil(products.length / productsPerPage);
+displayProducts(initialPage);
+generatePagination(initialPage, totalPages);
+
+  </script>
+</body>
+</html>
+
+
