@@ -3304,6 +3304,14 @@ html {
     height: fit-content;
   }
 
+  .tablet\:tw-h-\[700px\]{
+    height: 700px;
+  }
+
+  .tablet\:tw-h-\[600px\]{
+    height: 600px;
+  }
+
   .tablet\:tw-w-105{
     width: 405px;
   }
@@ -3599,6 +3607,14 @@ html {
 
   .square\:tw-h-full{
     height: 100%;
+  }
+
+  .square\:tw-h-\[700px\]{
+    height: 700px;
+  }
+
+  .square\:tw-h-\[600px\]{
+    height: 600px;
   }
 
   .square\:tw-w-16{
