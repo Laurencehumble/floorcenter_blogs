@@ -255,13 +255,13 @@
     .pagination a{
       color: #637381;
       text-decoration: none;
-      font-size: 1.2rem;
-      line-height: 45px;
+      font-size: 1.1rem;
+      line-height: 33px;
     }
     
     .previous-page, .next-page{
       border-radius: 3px;
-      padding: 6.5px;
+      padding: 2px;
       cursor: pointer;
       
     }
@@ -286,8 +286,9 @@
     }
     
     .current-page, .dots{
-     border-radius: 3px;
-      width: 45px;
+      border-radius: 3px;
+      padding: 2px;
+      width: 37px;
       cursor: pointer;
     }
     
@@ -303,4 +304,85 @@
     .disable{
       background: #ccc;
     }
+
+
+
+/* Styles for the scroll to top button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #B91C1C;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  animation: bounce 1s infinite alternate;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding regular shadow effect */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Adding drop shadow */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #777;
+  animation: none; /* Disable animation on hover */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* Styles for the subscribe newsletter navbar */
+#subscribeNavbar {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  
+  color: white;
+  text-align: center;
+  padding: 70px 10px 10px 10px;
+  transition: top 0.3s;
+}
+
+#subscribeNavbar.hidden {
+  top: -250px;
+}
+
+#subscribeNavbar.show {
+  top: 0;
+}
+
+.arrow-up {
+  position: absolute;
+  top: -25px; /* Adjust the distance outside the circle */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
