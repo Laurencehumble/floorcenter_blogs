@@ -4399,6 +4399,14 @@ html {
     position: absolute;
   }
 
+  .desktop\:tw-left-56{
+    left: 224px;
+  }
+
+  .desktop\:tw-right-56{
+    right: 224px;
+  }
+
   .desktop\:tw-block{
     display: block;
   }
